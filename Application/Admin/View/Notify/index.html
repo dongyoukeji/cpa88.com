@@ -1,0 +1,55 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 555px;">
+        	<div class="admin_bg_all">
+            	<div class="admin_bg_t">
+                	<a href="#" id="admin_bg_t_x">通知列表</a>
+                    <a href="__URL__/add">发布通知</a>
+                    <div class="admin_bg_t_ss">
+						<form action="__SELF__">
+							<span>
+								<input name="title" value="{$search.name}" type="text" placeholder="标题">
+								<input name="" type="submit" value="搜索">
+								<input type="button" class="btn-all" data-role="__URL__/index" value="所有">
+							</span>
+								<strong>
+									<select name="cid">
+										<option value="-1">筛选</option>
+										<option value="4" <eq name="search.status" value="4">selected</eq>>站内公告</option>
+										<option value="5" <eq name="search.status" value="5">selected</eq>>常见问题</option>
+										<option value="6" <eq name="search.status" value="6">selected</eq>>结算通知</option>
+									</select>
+								</strong>
+							</form>
+                    </div>
+                </div>
+            	<div class="admin_bg_b">
+                    <ul class="admin_bg_b_t">
+                    	<li class="admin_bg5">时间</li>
+                        <li class="admin_bg5">类别</li>
+                        <li class="admin_bg10">标题</li>
+                        <li class="admin_bg11">操作</li>
+                    </ul>
+					 <notempty name="list">
+						<volist name="list" id="vo">
+							 <ul>
+								<li class="admin_bg5">{$vo.create_time|date='Y-m-d',###}</li>
+								<li class="admin_bg5">
+									<volist name="col" id="vo1">
+										<eq name="vo1.id" value="$vo.cid">{$vo1.title}</eq>
+									</volist>
+								</li>
+								<li class="admin_bg10">{$vo.title}</li>
+								<li class="admin_bg11">
+									<a href="__URL__/edit?id={$vo.id}">编辑</a>
+									<a href="__URL__/del?id={$vo.id}" class="confirm" data-role="您确定要删除文档吗？删除后将不能恢复。">删除</a>
+								</li>
+							</ul>
+						</volist>
+						 <div class="admin_null">{$page}</div>
+						<else />
+						<div class="admin_null">暂无数据</div>
+					</notempty>
+                </div>
+            </div>
+        </div>
+<include file="Common:footer"/>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Tag</title>
+</head>
+<body>
+    <list limit="12"  where="cid eq 6">
+        <volist name="list" id="vo">
+            <li><a href="#/{$vo.id}">{$vo.title}</a></li>
+        </volist>
+    </list>
+</body>
+</html>

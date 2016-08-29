@@ -1,0 +1,244 @@
+<include file="Common:header"/>
+<script type="text/javascript" src="__PLUG__/jeDate/jedate/jedate.js"></script>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">XONE 产品信息</a>
+                    <span class="admin_yhgl_top">
+                        <a href="__URL__/plist?mid={$Think.get.mid}">返回产品列表</a>
+                    </span>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg6">开通时间</li>
+                <li class="admin_bg7">产品</li>
+                <li class="admin_bg5">类型</li>
+                <li class="admin_bg5">推广方式</li>
+                <li class="admin_bg5">结算方式</li>
+                <li class="admin_bg5">价格</li>
+                <li class="admin_bg4">数据</li>
+            </ul>
+
+            <ul>
+                <li class="admin_bg6"><p></p>{$pro.create_time|date='Y-m-d',###}</li>
+                <li class="admin_bg7">{$pro.pid|get_pro}</li>
+                <li class="admin_bg5">{$pro.cid|get_col}</li>
+                <li class="admin_bg5"><eq name="pro.type" value="meiti">富媒体<else />{$pro.type}</eq></li>
+                <li class="admin_bg5">{$pro.date|jiesuan1}</li>
+                <li class="admin_bg5">{$pro.price}</li>
+                <li class="admin_bg4"><a href="__URL__/export?mid={$Think.get.mid}&pid={$Think.get.id}">下载</a> </li>
+                <form action="__URL__/package" method="post" enctype="multipart/form-data">
+                    <div class="team_bottom">
+                        <div class="admin_tgfs">
+                            <a href="#" id="admin_tgfs_xz"><eq name="pro.type" value="meiti">富媒体<else />{$pro.type}</eq></a>
+                        </div>
+                        <div class="admin_tgfs admin_tgfs2">
+                            <volist name="pro.pack_list" id="vo">
+                                <a href="__URL__/ckeck?id={$vo.id}&mid={$Think.get.mid}&p={$Think.get.p}" <eq name="vo.id" value="$Think.get.id">id="admin_tgfs_xz" class="admin_tgfs_xz_title"</eq>>{$vo.title}</a>
+                            </volist>
+                        </div>
+                        <div style="float:right;" >
+                            删除包:<select  id="package-names">
+                                        <option value="0">-请选择-</option>
+                                        <volist name="pro.pack_list" id="vo">
+                                            <option value="{$vo.id}">{$vo.title}</option>
+                                        </volist>
+                                    </select>
+                                    <a href="javascript:void(0);" class="btn-delpack">删除</a>
+                        </div>
+                        <div class="admin_tgfs_in">
+                            <input name="date" type="text"  placeholder="请输入日期" class="laydate-icon" id="textymdhms" readonly>
+                            <input name="sh_price" type="text" value="{$pro.sh_price}" placeholder="上家价格" id="sh_price" onblur="change_val(this,1)">
+                            <input name="price" type="text" value="{$pro.price}" placeholder="用户价格" id="price" onblur="change_val(this,1)">
+                            <input name="real" id="real" type="text" placeholder="上家数据" class="" id="real" onblur="change_val(this,1)">
+                            <input name="qudao" type="text" placeholder="用户数据" class="" id="qudao" onblur="change_val(this,1)">
+                            <input type="hidden" name="pid" value="{$pro.id}" class="" id="pid">
+                            <input type="hidden" name="mid" value="{$pro.mid}" id="mid">
+                            <input type="hidden" name="download" value="{$pro.download}" id="download">
+                            <input name="sh_ckeck" type="text" placeholder="上家核减数据" id="sh_ckeck">
+                            <input name="ckeck" type="text" placeholder="用户核减数据" id="ckeck">
+                            <label>
+                                <input type="checkbox" name="sh_shui" id="sh_shui" value="1">
+                                <em>上家税点</em>
+                            </label>
+                            <label>
+                                 <input type="checkbox" name="check_shui" id="shui" value="1">
+                                 <em>下家税点</em>
+                            </label>
+                            <input style="width:200px;" name="file" type="file">
+                            <eq name="member_type" value="0"><input type="hidden" name="shui" value="{$shui}"><else /><input type="hidden" name="shui" value="0"></eq>
+                        </div>
+                        <label class="admin_tgfs_t">
+                            <i>时间</i>
+                            <i>上家价格/元</i>
+                            <i>用户价格/元</i>
+                            <i>上家数据</i>
+                            <i>用户数据</i>
+                            <i>上家核减数据</i>
+                            <i>用户核减数据</i>
+                            <i>结算税率</i>
+                            <i>上家结算金额</i>
+                            <i>用户结算金额</i>
+                            <i>收益金额</i>
+                            <i>官方截图</i>
+                            <i>结算状态</i>
+                        </label>
+
+                        <notempty name="list">
+                            <volist name="list" id="vo1">
+                                <label data-role="{$vo1.id}">
+                                    <i>{$vo1.time|date='Y-m-d',###}</i>
+                                    <i>{$vo1.sh_price}</i>
+                                    <i>{$vo1.price}</i>
+                                    <i><span  class="check-input" data-role="real"><eq name="real" value="0">-<else />{$vo1.real}</eq></span></i>
+                                    <i><span class="check-input" data-role="qudao">{$vo1.qudao}</span></i>
+                                    <i><span class="check-input" data-role="sh_checked"><eq name="vo1.sh_checked" value="-">-<else />{$vo1.sh_checked}</eq></span></i>
+                                    <i><span class="check-input" data-role="checked">{$vo1.checked}</span></i>
+                                    <i id="chou-shui"><eq name="member_type" value="0">{$shui}<else />-</eq></i>
+                                    <i><neq name="vo1.sh_total" value="0">{$vo1.sh_total}<else />-</neq> </i>
+                                    <i><neq name="vo1.total" value="0">{$vo1.total}<else />-</neq></i>
+                                    <i><eq name="vo1.shouyi" value="0">-<else />{$vo1.shouyi}</eq></i>
+                                    <i><notempty name="vo1.image">已上传<else />未上传</notempty></i>
+                                    <i>
+                                        <if condition="$vo1.status eq 1  and $vo1.total neq 0"><span style="color:green;">已结算</span></if>
+                                        <if condition="$vo1.status eq 0  and $vo1.total neq 0"><span style="color:red;">未结算</span></if>
+                                        <if condition="$vo1.status eq 0 and $vo1.checked eq 0 and $vo1.total eq 0">-</if>
+                                    </i>
+                                </label>
+                            </volist>
+                            <div class="admin_null">{$page}</div>
+                            <else />
+                            <div class="admin_null">暂无数据</div>
+                        </notempty>
+                        <!--<div style="line-height:30px; text-align:center;">翻页</div>-->
+                        <div class="admin_tgxx">
+                            <em>推广地址：<input name="url" type="text" value="{$pro.resource}"></em>
+                            <em>安装包：<input name="file1" type="file"></em>
+                            <input class="admin_tg_an" name="" type="submit" value="保存数据">
+                            <textarea name="desc" cols="" rows="" placeholder="备注信息">{$pro.des}</textarea>
+                        </div>
+                    </div>
+                </form>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $flag = true;
+    $(function () {
+        jeDate({
+            dateCell:"#textymdhms",
+            format:"YYYY-MM-DD",
+            isinitVal:true,
+            isTime:true,
+            festival: true, //显示节日
+            maxDate: jeDate.now(0), //1代表明天，2代表后天，以此类推
+            choosefun:function(val) {
+               $.post('__URL__/change_date',{pid:'{$Think.get.id}',mid:'{$Think.get.mid}',date:val},function(data) {
+                    if(data.status==1){
+                        $('#mid').val(data.data.mid);
+                        $('#pid').val(data.data.pid);
+                        $('#price').val(data.data.price);
+                        $('#qudao').val(data.data.qudao);
+                        if(data.data.checked!='-'){
+                            $('#ckeck').val(data.data.checked);
+                        }
+                        if(data.data.sh_checked!='-'){
+                            $('#sh_ckeck').val(data.data.sh_checked);
+                        }
+                        $('#real').val(data.data.real);
+                        $('#sh_price').val(data.data.sh_price);
+                       if(data.data.sh_type==1){
+                           $('#sh_type').attr('checked',true);
+                       }else {
+                           $('#sh_type').attr('checked',false);
+                       }
+                       $('.admin_tgfs_in').append('<input type="hidden" name="data_insert" value="1"><input type="hidden" name="data_id" value="'+data.data.id+'">');
+                    }else{
+                        $('.admin_tgfs_in').append('<input type="hidden" name="data_insert" value="0"><input type="hidden" name="data_id" value="0">');
+
+                        $('#qudao').val('');
+                        $('#ckeck').val('');
+                        $('#real').val('');
+                        $('#sh_ckeck').val('');
+                    }
+               });
+            }
+        });
+        $('form').validate();
+        $('form').on('submit',function (e) {
+            e.preventDefault();
+            if($('form').valid() && $flag){
+                $index = layer.load(2);
+                $('form').ajaxSubmit({
+                    success:function(data){
+                        if(data.status=1){
+                            layer.close($index);
+                           redirect('__URL__/ckeck?id={$Think.get.id}&mid={$Think.get.mid}&p={$Think.get.p}',data.msg,3);
+                        }else{
+                            layer.msg(data.msg, {icon: 2});
+                        }
+                    }
+                });
+            }
+        });
+        // 第一个参数 单击事件处理，第二个参数 双击事件处理
+        $(".check-input").dblclick(function () {
+            $('<input type="text" id="this-input" style="width: 40px;text-align:center;border: none;" value="'+$(this).text()+'" onblur="change(this);">').insertBefore($(this));
+            $(this).hide();
+        });
+
+        $('.btn-delpack').click(function (e) {
+            e.preventDefault();
+            $val = $('#package-names').val();
+
+            if($val!==0){
+                $.post('__URL__/delpack',{t:'{$pro.type}',cid:'{$pro.cid}',id:$val,mid:'{$Think.get.mid}',title:$('.admin_tgfs_xz_title').text(),pid:'{$pro.pid}'},function (data) {
+                    window.location.reload();
+                });
+            }
+        });
+    });
+    //鼠标单击和双击事件组件
+function change(obj) {
+    $this=$(obj);
+    $id = $this.parent('i').parent('label').attr('data-role');
+    $val  = $this.val();
+    $type  = $this.siblings('span.check-input').attr('data-role');
+    $shui  = $('#chou-shui').text();
+    if($('#sh_shui').is(':checked')){
+        $_shui  = 1;
+    }else {
+        $_shui  = 0;
+    }
+
+    $.post('__URL__/check_data',{id:$id,val:$val,t:$type,shui:$shui,sh_shui:$_shui,pid:"{$Think.get.id}"},function (data) {
+        if(data.status==1){
+            setTimeout(function () {
+                window.location.reload();
+            },500);
+        }
+    });
+}
+ function change_val(obj,id) {
+        var reg = /^\d+(\.\d+)?$/;
+        $this = $(obj);
+        if($this.val()!=''){
+            $this.removeAttr('style');
+            $flag = true;
+        }else {
+            $flag = false;
+        }
+        if(id==1){
+            if(!reg.test($this.val())){
+                $flag = false;
+                alert('请填写数字');
+                $this.css('border','1px solid red');
+            }else{
+                $this.removeAttr('style');
+                $flag = true;
+            }
+        }
+    }
+</script>
+<include file="Common:footer"/>

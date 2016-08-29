@@ -1,0 +1,37 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">客服列表</a>
+            <a href="__URL__/add">客服添加</a>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg4">编号</li>
+                <li class="admin_bg4">客服QQ号</li>
+                <li class="admin_bg4">客服名称</li>
+                <li class="admin_bg4">状态</li>
+                <li class="admin_bg4">操作</li>
+            </ul>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <ul>
+                        <li class="admin_bg4">{$vo.id}</li>
+                        <li class="admin_bg4">{$vo.qq}</li>
+                        <li class="admin_bg4">{$vo.name}</li>
+                        <li class="admin_bg4"><eq name="vo.status" value="0">正常<else />禁用</eq> </li>
+                        <li class="admin_bg4">
+                            <a href="__URL__/add?id={$vo.id}">编辑</a>
+                            <eq name="vo.status" value="0"><a href="__URL__/status?id={$vo.id}&t=1">禁用</a><else /><a href="__URL__/status?id={$vo.id}&t=0">正常</a></eq>
+                            <a href="__URL__/del?id={$vo.id}" class="confirm" data-role="您确定要删除吗？删除后数据将不能恢复！">删除</a>
+                        </li>
+                    </ul>
+                </volist>
+                <div class="admin_null">{$page}</div>
+                <else />
+                <div class="admin_null">暂无数据</div>
+            </notempty>
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

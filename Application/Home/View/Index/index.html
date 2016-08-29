@@ -1,0 +1,107 @@
+<include file="Common:header"/>
+<div class="main">
+    <!-- 产品列表 -->
+    <div class="main_product">
+        <div id="tp">
+
+        </div>
+        <div class="drives">
+            <a href="{:U('/product/1')}" class="computer"></a>
+        </div>
+        <div class="drives">
+            <a href="{:U('/product/2')}" class="phone"></a>
+        </div>
+        <div id="bt">
+
+        </div>
+    </div>
+    <!-- 广告条advertisement -->
+    <div class="main_adv">
+        <ul class="main_adv_ul1">
+            <list model="Advert" limit="5">
+               <volist name="list" id="vo">
+                   <li><a href="{$vo.url}"><img src="{$vo.image}" alt=""></a></li>
+               </volist>
+            </list>
+        </ul>
+        <ul class="main_adv_ul2">
+        </ul>
+    </div>
+    <!-- 通知 -->
+    <div class="main_notice">
+        <div class="main_notice_list">
+					<span>
+						<b>站内公告</b>
+						<a href="{:U('/notice/4')}">更多</a>
+					</span>
+            <div id="tj">
+            </div>
+        </div>
+        <div class="main_notice_list">
+					<span>
+						<b>常见问题</b>
+						<a href="{:U('/notice/5')}">更多</a>
+					</span>
+            <div id="wt">
+            </div>
+        </div>
+        <div class="main_notice_list border_none">
+					<span>
+						<b>结算通知</b>
+						<a href="{:U('/notice/6')}">更多</a>
+					</span>
+            <div id="js">
+            </div>
+        </div>
+    </div>
+    <!-- 申请流程 -->
+    <div class="main_process">
+				<span class="pro_title">
+					<b></b>
+					<strong>
+                        <em>Application process</em>
+                        <a><img src="__IMAGES__/flow.fw.png" alt=""></a>
+                    </strong>
+				</span>
+        <div class="main_process_flow">
+            <a href="javascript:;" class="flow1">
+                <b>用户注册</b>
+            </a>
+            <em>&gt;</em>
+            <a href="javascript:;" class="flow2">
+                <b>选择产品</b>
+            </a>
+            <em>&gt;</em>
+            <a href="javascript:;" class="flow3">
+                <!-- <img src="__IMAGES__/05.gif" alt=""> -->
+                <b>联系客服</b>
+            </a>
+            <em>></em>
+            <a href="javascript:;" class="flow4">
+                <b>客服开通</b>
+            </a>
+            <em>&gt;</em>
+            <a href="javascript:;" class="flow5">
+                <b>广告传播</b>
+            </a>
+            <em>&gt;</em>
+            <a href="javascript:;" class="flow6">
+                <b>获取佣金</b>
+            </a>
+        </div>
+    </div>
+    <!-- 合作伙伴 -->
+    <div class="main_partners">
+				<span class="pro_title">
+					<b></b>
+					<strong>
+                        <em>Our partners</em>
+                        <a><img src="__IMAGES__/friend.fw.png" alt=""></a>
+                    </strong>
+				</span>
+        <div class="main_partners_list">
+            
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

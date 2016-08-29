@@ -1,0 +1,122 @@
+<include file="Common:header1"/>
+<script type="text/javascript" src="__JS__/jquery.min.js"></script>
+<script type="text/javascript" src="__PLUG__/layer-v2.2/layer/layer.js"></script>
+<script type="text/javascript" src="__JS__/jquery.form.js"></script>
+
+    <!-- 站中 -->
+    <div class="notice_details_main">
+        <div class="search">
+            <strong>NOTICE 个人中心</strong>
+				<span class="check2">
+					<a href="{:U('/private')}" id="check2">基本信息</a>
+					<a href="{:U('/my_product')}">开通的产品</a>
+				</span>
+				<span>
+					<b>用户名：<i id="user_name"></i></b>
+					<a href="javascript:;" class="changePassword">修改密码</a>
+				</span>
+            <div>
+                <b>用户类型：</b>
+                <em id="user_type"></em>
+            </div>
+        </div>
+
+        <div class="private_infor">
+            <div class="infor_reivse" id="changePad" style="display:none;">
+                        <em class="change_input">
+                            <i class="">原始登录密码</i>
+                            <input type="password" class="changePassword1" id="initPassword" placeholder="">
+                        </em>
+                        <em class="change_input">
+                            <i>新密码</i>
+                            <input type="password" class="changePassword1" id="newPassword1" placeholder="">
+                        </em>
+                        <em class="change_input">
+                            <i>再次输入密码</i>
+                            <input type="password" class="changePassword1" id="newPassword2" placeholder="">
+                        </em>
+                <input class="reivse_submit" type="submit" value="确认修改">
+                <input class="reivse_reset" type="reset" value="取消">
+            </div>
+            <div class="user_infor">
+					<span>
+						<b id="psUserInfo">用户信息</b>
+						<a id="inforChange">修改</a>
+						<a  style="display:none;" id="inforSave">保存</a>
+					</span>
+                <div>
+						<span id="info">
+
+						</span>
+                </div>
+            </div>
+            <form action="__URL__/user_check_pay" id="form1" method="post">
+                <div class="user_infor">
+					<span>
+						<b id="psMoneyInfo">收款信息</b>
+						<a id="accChange" onclick="changeAcc()">修改</a>
+						<a id="user_infor_bg" style="display:none;" onclick="saveAcc()">保存</a>
+					</span>
+                    <div>
+                        <select id="getType"  disabled>
+
+                        </select>
+						<span class="user_infor_type" id="getType1">
+							<strong>
+                                <em>银行名称</em>
+                                <!--<input class="accountIfor" id="accountBankName" type="text"  >-->
+                                <select class="accountIfor" style="margin-left:12px;" name="accountIfor" id="accountBankName" disabled>
+
+                                </select>
+                            </strong>
+							<strong>
+                                <em>开户行</em>
+                                <input class="accountIfor" id="accountBankAddr" name="accountBankAddr" type="text" disabled >
+                            </strong>
+							<strong>
+                                <em>收款账号</em>
+                                <input class="accountIfor" id="bankValue" name="bankValue" type="text" disabled  maxlength="23" onkeyup="banNumberOnKey()">
+                            </strong>
+							<strong>
+                                <em>收款人姓名</em>
+                                <input class="accountIfor" id="accountBankUser" name="accountBankUser" type="text"  disabled >
+                            </strong>
+						</span>
+						<span class="user_infor_type" id="getType2" style="display:none;">
+							<strong>
+                                <em>支付宝账号</em>
+                                <input class="accountIfor" id="accountAliNumber" name="accountAliNumber" type="text" disabled >
+                            </strong>
+							<strong>
+                                <em>收款人姓名</em>
+                                <input class="accountIfor" id="accountAliName" name="accountAliName" type="text"  disabled >
+                            </strong>
+						</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 广告条advertisement -->
+        <div class="main_adv">
+            <a href="#">
+                <img src="__IMAGES__/gg.fw.png" alt="">
+            </a>
+        </div>
+        <!-- 合作伙伴 -->
+        <div class="main_partners">
+				<span class="pro_title">
+					<b></b>
+					<strong>
+                        <em>Our partners</em>
+                        <a><img src="__IMAGES__/friend.fw.png" alt=""></a>
+                    </strong>
+				</span>
+            <div class="main_partners_list">
+
+            </div>
+        </div>
+    </div>
+    <div class="serverBg" id="serverBg" style="display:none;"></div>
+
+<include file="Common:footer" />

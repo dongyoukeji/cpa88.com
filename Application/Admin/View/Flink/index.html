@@ -1,0 +1,69 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 555px;">
+    <style type="text/css">
+        .admin_bg_b li{
+            line-height:70px;}
+        .admin_bg_b li img{
+            vertical-align:middle;}
+    </style>
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">友情链接列表</a>
+            <a href="__URL__/add">添加友情链接</a>
+            <div class="admin_bg_t_ss">
+                <!--<span>-->
+                    <!--<input name="" type="text" placeholder="标题">-->
+                    <!--<input name="" type="submit" value="搜索">-->
+                <!--</span>-->
+                <!--<strong>-->
+                    <!--<select name="">-->
+                        <!--<option value="">筛选</option>-->
+                        <!--<option value="">站内公告</option>-->
+                        <!--<option value="">常见问题</option>-->
+                        <!--<option value="">结算通知</option>-->
+                    <!--</select>-->
+                <!--</strong>-->
+            </div>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg4">时间</li>
+                <li class="admin_bg4">名称</li>
+                <li class="admin_bg4">图标</li>
+                <li class="admin_bg7">链接</li>
+                <li class="admin_bg7">状态</li>
+                <li class="admin_bg1">操作</li>
+            </ul>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <ul>
+                        <li class="admin_bg4">{$vo.date|date='Y-m-d',###}</li>
+                        <li class="admin_bg4">
+                            {$vo.title}
+                        </li>
+                        <li class="admin_bg4"><img src="__FILES__/{$vo.ico}" height="40" alt="{$vo.title}"></li>
+                        <li class="admin_bg7">
+                            {$vo.uri}
+                        </li>
+                        <li class="admin_bg7">
+                           <eq name="vo.status" value="0"><b class="green">正常</b><else /><b class="red">禁用</b></eq>
+                        </li>
+                        <li class="admin_bg1">
+                            <a href="__URL__/add?id={$vo.id}">编辑</a>
+                            <eq name="vo.status" value="0">
+                                <a href="__URL__/status?id={$vo.id}&t=1" class="check-status">禁用</a>
+                                <else />
+                                <a href="__URL__/status?id={$vo.id}&t=0" class="check-status">启用</a>
+                            </eq>
+                            <a href="__URL__/del?id={$vo.id}" class="confirm" data-role="您确定要删除文档吗？删除后将不能恢复。">删除</a>
+                        </li>
+                    </ul>
+                </volist>
+                <div class="admin_null">{$page}</div>
+                <else />
+                <div class="admin_null">暂无数据</div>
+            </notempty>
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

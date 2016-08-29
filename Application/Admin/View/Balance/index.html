@@ -1,0 +1,64 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 480px;">
+    <div class="admin_bg_all">
+
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">结算列表</a>
+            <div class="admin_bg_t_ss">
+                <form action="__SELF__">
+                    <span>
+                        <input name="username" value="{$search.name}" type="text" placeholder="用户名">
+                        <input name="" type="submit" value="搜索">
+                        <input type="button" class="btn-all" data-role="__URL__/index" value="所有">
+                    </span>
+                    <strong>
+                        <select name="status">
+                            <option value="-1">状态</option>
+                            <option value="1" <eq name="search.status" value="1">selected</eq>>已结算</option>
+                            <option value="0" <eq name="search.status" value="0">selected</eq>>未结算</option>
+                        </select>
+                    </strong>
+                </form>
+            </div>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg5">时间</li>
+                <li class="admin_bg9">用户/类别/联系人</li>
+                <li class="admin_bg6">产品</li>
+                <li class="admin_bg2">类别</li>
+                <li class="admin_bg2">推广</li>
+                <li class="admin_bg4">包名</li>
+                <li class="admin_bg2">状态</li>
+                <li class="admin_bg2">操作</li>
+            </ul>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <ul>
+                        <li class="admin_bg5">{$vo.time|date='Y-m-d',###}</li>
+                        <li class="admin_bg9">{$vo.mid|get_member}</li>
+                        <li class="admin_bg6">{$vo.pid|get_pack_name}</li>
+                        <li class="admin_bg2">{$vo.pid|get_pack_t}</li>
+                        <li class="admin_bg2">{$vo.pid|get_pack_type}</li>
+                        <li class="admin_bg4">{$vo.pid|get_pro_name}</li>
+                        <li class="admin_bg2">
+                           <eq name="vo.status" value="0">
+                               <font id="admin_color2">未结算</font>
+                               <else />
+                               <font id="admin_color1">已结算</font>
+                           </eq>
+                        </li>
+                        <li class="admin_bg2">
+                            <a href="__URL__/check?id={$vo.id}&mid={$vo.mid}">查看</a>
+                        </li>
+                    </ul>
+                </volist>
+                <div class="admin_null">{$page}</div>
+                <else />
+                <div class="admin_null">暂无数据</div>
+            </notempty>
+
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

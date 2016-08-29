@@ -1,0 +1,46 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a>ID:xone</a>
+            <a href="__URL__/see?mid={$Think.get.mid}" >基本信息</a>
+            <a href="__URL__/plist?mid={$Think.get.mid}" id="admin_bg_t_x">产品列表</a>
+            <a href="__URL__/add?mid={$Think.get.mid}">添加产品</a>
+            <span class="admin_yhgl_top">
+                <a href="__URL__/index">返回用户列表</a>
+            </span>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg6">开通时间</li>
+                <li class="admin_bg4">产品</li>
+                <li class="admin_bg2">类型</li>
+                <li class="admin_bg5">推广方式</li>
+                <li class="admin_bg4">包</li>
+                <li class="admin_bg5">结算方式</li>
+                <li class="admin_bg5">价格</li>
+                <li class="admin_bg4">操作</li>
+            </ul>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <ul>
+                        <li class="admin_bg6"><p>{$vo.id}</p>{$vo.create_time|date='Y-m-d',###}</li>
+                        <li class="admin_bg4">{$vo.pid|get_pro}</li>
+                        <li class="admin_bg2">{$vo.cid|get_col}</li>
+                        <li class="admin_bg5"><eq name="vo.type" value="meiti">富媒体<else />{$vo.type}</eq></li>
+                        <li class="admin_bg4">{$vo.pack.title}</li>
+                        <li class="admin_bg5">{$vo.pack.date|jiesuan}</li>
+                        <li class="admin_bg5">{$vo.pack.price}</li>
+                        <li class="admin_bg4">
+                            <a href="__URL__/ckeck?id={$vo.id}&mid={$Think.get.mid}">查看</a>
+                        </li>
+                    </ul>
+                </volist>
+                <div class="admin_null">{$page}</div>
+                <else />
+                <div class="admin_null">暂无数据</div>
+            </notempty>
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

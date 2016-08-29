@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><notempty name="vo.title">{$vo.title}-</notempty>  {:C('SiteConfig.title')}</title>
+    <meta name="keyword" content="{:C('SiteConfig.keyword')}" >
+    <meta name="description" content="{:C('SiteConfig.description')}" >
+    <link rel="stylesheet" href="__CSS__/weball.css">
+    <script src="__JS__/getClassName.js"></script>
+    <script src="__JS__/jquery.min.js"></script>
+    <script type="text/javascript">
+        //定义变量
+        var url ="__URL__/",imageUrl ="__IMAGES__/",filesUrl ="__FILES__/",p ="{$Think.get.p}",action ='{$Think.CONTROLLER_NAME}';
+    </script>
+</head>
+<body>
+<div class="web_all">
+    <!-- 站头 -->
+    <div class="header">
+        <div class="nav">
+            <a href="/" class="home">HOME</a>
+				<span>
+					<span>
+                        <a href="{:U('/product')}" <eq name="Think.CONTROLLER_NAME" value="Product">class="bgcolor"</eq>  >PRODUCT 产品</a>
+                        <a href="{:U('/notice')}"   <eq name="Think.CONTROLLER_NAME" value="Notice">class="bgcolor"</eq>>NOTICE 通知</a>
+                        <a href="javascript:void(0);">ABOUT US 我们</a>
+                    </span>
+				</span>
+        </div>
+        <div class="logo">
+            <img src="__IMAGES__/footer_logo1.fw.png" alt="">
+            <i>专注互联网营销，十多年行业经验的营销团队、运营团队</i>
+        </div>
+        <div class="login">
+            <div class="login_1" style="display:none;">
+                <a href="{:U('/login')}" class="enter">LOGIN 登录</a>
+                <a href="{:U('/register')}">REGISTER 注册</a>
+            </div>
+            <div  class="login_2">
+
+            </div>
+        </div>
+    </div>

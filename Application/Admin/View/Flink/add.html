@@ -1,0 +1,85 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 555px;">
+    <form action="__URL__/addhd" method="post">
+        <div class="admin_bg_fb">
+             <span>
+                 <em>名称</em>
+                 <input name="title" type="text" value="{$arc.title}" class="required">
+            </span>
+            <span>
+                <em>链接</em>
+                <input name="uri" type="url"  <notempty name="arc.uri"> value="{$arc.uri}"<else />value="http://"</notempty> class="required">
+                <input name="id" type="hidden" value="{$arc.id}" >
+            </span>
+            <span>
+                <em>图标</em>
+                <input name="file" type="file" value="{$arc.ico}" class="" style="border:none;margin-top:5px;">
+                <input name="ico" type="hidden" value="{$arc.ico}" id="ico">
+                <notempty name="arc.ico">
+                    <div >
+                        <a href="__URL__/delImage?id={$arc.id}" style="color:black" id="del-image" >X</a>
+                        <img src="__FILES__/{$arc.ico}" height="55" style="display:block;float:left">
+                    </div>
+                </notempty>
+            </span>
+            <span>
+                <em>描述</em>
+                <textarea name="description">{$arc.description}</textarea>
+            </span>
+            <span>
+                <em>排序</em>
+                <input name="sort" type="text" <notempty name="arc.sort">value="{$arc.sort}"<else />value="100"</notempty> style="">
+                <div class="tip" style="display:block;float:left;padding-right:6px;">*越小越靠前</div>
+            </span>
+             <span>
+                <em>状态</em>
+                <label>
+                    <input name="status" type="radio" value="0" <eq name="arc.status" value="0">checked</eq> <empty name="arc.status">checked</empty>>正常
+                </label>
+                <label>
+                    <input name="status" type="radio" value="1"  <eq name="arc.status" value="1">checked</eq>>锁定
+                </label>
+            </span>
+            <div class="admin_bg_b2 admin_bg_b3">
+                <input name="" type="submit" value="确认添加">
+            </div>
+
+        </div>
+    </form>
+</div>
+<script  type="text/javascript">
+   $(function () {
+       $('form').validate();
+       $('form').submit(function (e) {
+           e.preventDefault();
+           if($('form').valid()){
+               $(this).ajaxSubmit({
+                   success:function (data) {
+                       if(data.status==0){
+                           layer.msg(data.msg,{icon:2});
+                       }else{
+                           redirect(data.redirect,data.msg,3);
+                       }
+                   }
+               })
+           }
+       });
+       $('#del-image').click(function (e) {
+           e.preventDefault();
+           $href = $(this).attr('href');
+           layer.confirm('您确定要删除图片吗', {
+               btn: ['确定','取消'] //按钮
+           }, function(){
+               $.get($href,function (data) {
+                   if(data.status==0){
+                       layer.msg(data.msg, {icon: 2});
+                   }else{
+                       reload(data.msg,1);
+                   }
+               });
+           });
+
+       });
+   });
+</script>
+<include file="Common:footer"/>

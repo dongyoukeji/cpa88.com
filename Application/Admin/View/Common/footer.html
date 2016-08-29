@@ -1,0 +1,85 @@
+    </div>
+</div>
+<script>
+    function wh_all(){
+        var a=$(window).width();
+        var b=$('.admin_l').width();
+        $('.admin_r').css('width',a-b)
+        $('.admin_l').css('height',$(window).height());
+        $('.admin_r_all').css('height',$(window).height()-100);
+    }
+    $(function(){
+        wh_all();
+        $(window).resize(function(){
+            wh_all();
+        });
+        $('.btn-all').click(function () {
+            $url = $(this).attr('data-role');
+            window.location.href=$url;
+        });
+        /**
+         * confirm提示框
+         */
+        $('.confirm').click(function (e) {
+            e.preventDefault();
+            $msg =$(this).attr('data-role');
+            $href=$(this).attr('href');
+            layer.confirm($msg, {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                $.get($href,function (data) {
+                    if(data.status==0){
+                        layer.msg(data.msg, {icon: 2});
+                    }else {
+                        reload(data.msg,5);
+                    }
+                });
+            });
+        });
+        /**
+         * tips 提示
+         */
+        $('.tips').click(function () {
+            layer.tips($(this).attr('data-role'), $(this));
+        });
+
+        $('.check-status').click(function (e) {
+            e.preventDefault();
+            $href = $(this).attr('href');
+            $.get($href,function (data) {
+                if(data.status==1){
+                    window.location.reload();
+                }
+            });
+        });
+    });
+    /**
+     * 跳转页面
+     * @param url       跳转地址
+     * @param msg       提示信息
+     * @param sec       跳转时间:0不跳转
+     */
+    function redirect(url,msg,sec) {
+        layer.msg(msg+","+sec+"秒后页面跳转",{icon:1,time:sec*1000});
+        setTimeout(function () {
+            if(sec>0){
+                window.location.href=url;
+            }
+        },sec*1000);
+    }
+    /**
+     * 重新加载页面
+     * @param msg
+     * @param sec
+     */
+    function reload(msg,sec) {
+        layer.msg(msg+"，"+sec+"秒后页面重新加载",{icon:1,time:sec*1000});
+        setTimeout(function () {
+            if(sec>0){
+                window.location.reload();
+            }
+        },sec*1000);
+    }
+</script>
+</body>
+</html>

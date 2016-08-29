@@ -1,0 +1,92 @@
+<include file="Common:header"/>
+<link rel="stylesheet" href="__PLUG__/kindeditor-4.1.10/themes/default/default.css" />
+<link rel="stylesheet" href="__PLUG__/kindeditor-4.1.10/plugins/code/prettify.css" />
+<script type="text/javascript" charset="utf-8" src="__PLUG__/kindeditor-4.1.10/kindeditor-all-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PLUG__/kindeditor-4.1.10/lang/zh_CN.js"></script>
+<script charset="utf-8" src="__PLUG__/kindeditor-4.1.10/plugins/code/prettify.js"></script>
+<div class="admin_r_all" style="height: 555px;">
+    <form action="__URL__/edithd" method="post">
+        <div class="admin_bg_fb">
+             <span>
+                <em>通知类别</em>
+                <select name="cid">
+                    <volist name="col" id="vo1">
+                        <option value="{$vo1.id}" <eq name="vo1.id" value="$arc.cid">selected="selected"</eq>>{$vo1.title}</option>
+                    </volist>
+                </select>
+            </span>
+            <span>
+                <em>标题</em>
+                <input name="title" type="text" value="{$arc.title}" class="required">
+                <input name="id" type="hidden" value="{$arc.id}" >
+            </span>
+            <span>
+                <em>描述</em>
+                <div class="">
+                    <textarea name="description" rows="5">{$arc.description}</textarea>
+                </div>
+            </span>
+            <span>
+                <em>内容</em>
+                <div class="admin_bjq">
+                    <textarea name="content" id="editor">{$arc.content}</textarea>
+                </div>
+            </span>
+            <!-- <span>
+                <em>属性</em>
+                <div class="">
+                    <label><input type="checkbox" name="attr[com]" value="1" <eq name="arc.com" value="1">checked</eq> >推荐</label>
+                    <label><input type="checkbox" name="attr[hot]" value="1" <eq name="arc.hot" value="1">checked</eq> >最热</label>
+                    <label><input type="checkbox" name="attr[new]" value="1" <eq name="arc.new" value="1">checked</eq> >最新</label>
+                    <label><input type="checkbox" name="attr[head]" value="1" <eq name="arc.head" value="1">checked</eq> >头条</label>
+                    <label><input type="checkbox" name="attr[top]" value="1" <eq name="arc.top" value="1">checked</eq> >置顶</label>
+                </div>
+            </span> -->
+            <div class="admin_bg_b2 admin_bg_b3">
+                <input name="" type="submit" value="确认发布">
+            </div>
+
+        </div>
+    </form>
+</div>
+<script  type="text/javascript">
+    KindEditor.ready(function(K) {
+        var editor1 = K.create('#editor', {
+            cssPath : '__PLUG__/kindeditor-4.1.10/plugins/code/prettify.css',
+            uploadJson : '__PLUG__/kindeditor-4.1.10/php/upload_json.php',
+            fileManagerJson : '__PLUG__/kindeditor-4.1.10/php/file_manager_json.php',
+            allowFileManager : true,
+            width:$('.admin_bjq').width(),
+            height:400,
+            afterCreate : function() {
+                var self = this;
+                K.ctrl(document, 13, function() {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+                K.ctrl(self.edit.doc, 13, function() {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+            }
+        });
+        $('form').validate();
+        $('form').on('submit',function (e) {
+            e.preventDefault();
+            if($('form').valid()){
+                $('form').ajaxSubmit({
+                    success:function(data){
+                        if(data.status=1){
+                            redirect('__URL__/index',data.msg,3);
+                        }else{
+                            layer.msg(data.msg, {icon: 1});
+                        }
+                    }
+                });
+            }
+        });
+        prettyPrint();
+    });
+
+</script>
+<include file="Common:footer"/>

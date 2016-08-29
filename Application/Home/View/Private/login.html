@@ -1,0 +1,43 @@
+<include file="Common:header1"/>
+<script type="text/javascript" src="__JS__/jquery.form.js"></script>
+<div class="login_main">
+    <!-- 登陆 -->
+    <div class="login_main_login" id="login_main_login1">
+			<span>
+				<b>LOGIN 登录</b>
+				<a href="register.html">我要注册</a>
+			</span>
+			<form action="__URL__/user_login" method="post" autocomplete="off">
+				<div class="login_main_login_input">
+				<span class="login_input">
+					<input class="login_user required" type="text" placeholder="用户名" value="" name="username">
+					<input class="cover_password" id="loginpwd" type="text" placeholder="密码">
+					<input class="login_password required" style="display:none" type="password" title="密码" placeholder="密码" name="password">
+					<strong>
+						<input class="login_code required" id="login_code" type="text" placeholder="验证码" name="code">
+						<span>
+							<img src="__URL__/verify" class="code_image" alt="" onclick="javascript:this.src=this.src+'?id='+Math.random()">
+						</span>
+					</strong>
+				</span>
+				<span class="login_btn">
+					<b id="msg"></b>
+					<input type="submit" value="LOGIN 登录" id="login">
+					<a class="forget_password" target="_blank" href="__URL__/kefu?qq=1173989924">忘记密码</a>
+				</span>
+				</div>
+			</form>
+        <div class="cle"></div>
+    </div>
+</div>
+<script type="text/javascript" src="__JS__/login_jq.js"></script>
+<include file="Common:footer" />
+<script>
+	$(function (){
+		$(".forget_password").click(function(e){
+			if(!confirm("请联系客服！")){
+				e.preventDefault();
+			}
+		});
+	})
+</script>

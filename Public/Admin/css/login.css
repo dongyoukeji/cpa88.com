@@ -1,0 +1,9 @@
+.login2{width: 332px; position: absolute; left: 50%; margin-left: -166px; top: 20%;}
+
+.login2 span{width: 100%; float: left; margin-bottom: 40px; margin-left: 90px; font-size: 48px; color: white; letter-spacing: 4px; text-shadow: 2px 2px 8px #fff;}
+.login2 .input_group{width: 100%; float: left; margin-bottom: 24px;}
+
+
+.btn{width: 100px; height: 30px; float: left; margin-left: 66px; font-size: 14px; color: white; background: url("../image/btn_bg.gif") repeat-x; border-radius: 5px; border: none;}
+.input_group label{height: 40px; line-height: 40px; float: left; font-size: 18px; color: white;}
+.input_group>input{width: 260px; height: 40px; line-height: 40px; float: left; text-indent: 18px; margin-left: 15px; border-radius: 5px; background: white; border: none;}

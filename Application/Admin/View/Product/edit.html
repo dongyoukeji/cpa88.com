@@ -1,0 +1,217 @@
+<include file="Common:header"/>
+<link rel="stylesheet" href="__PLUG__/kindeditor-4.1.10/themes/default/default.css" />
+<link rel="stylesheet" href="__PLUG__/kindeditor-4.1.10/plugins/code/prettify.css" />
+<script src="__PLUG__/jquery.validate/jquery.validate.js" type="text/javascript"></script>
+<link href="__PLUG__/jquery.validate/jquery.validate.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="__PLUG__/kindeditor-4.1.10/kindeditor-all-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PLUG__/kindeditor-4.1.10/lang/zh_CN.js"></script>
+<script charset="utf-8" src="__PLUG__/kindeditor-4.1.10/plugins/code/prettify.js"></script>
+<div class="admin_r_all" style="height: 478px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="__URL__/index" >产品列表</a>
+            <a href="#" id="admin_bg_t_x">产品添加</a>
+        </div>
+        <form action="__URL__/edithd" method="post" id="form1">
+            <div class="admin_bg_fb">
+                    <span>
+                    	<em>序号</em>
+                        <input name="sort" type="text" value="{$pro.sort}" class="" data-role="排序数字越大越靠前">
+                        <input name="id" type="hidden" value="{$pro.id}">
+                    </span>
+                    <span>
+                    	<em>产品类型</em>
+                        <select name="pro_type">
+                            <volist name="col" id="vo1">
+                                <option value="{$vo1.id}"  <eq name="vo1.id" value="$pro.type">selected</eq>>{$vo1.title}</option>
+                            </volist>
+                        </select>
+                    </span>
+                    <span>
+                    	<em>产品名称</em>
+                        <input name="pro_name" type="text" class=" required" data-role="产品名称" value="{$pro.title}">
+                    </span>
+                    <span>
+                    	<em>封面预览</em>
+                        <notempty name="pro.image">
+                            <img src="{$pro.image}" width="200" id="show-image">
+                        </notempty>
+                    </span>
+                    <span>
+                    	<em>产品封面</em>
+                        <input type="text" id="url1" value="{$pro.image}" name="pro_image" class="required" data-role="请上传产品封面"/>
+                        <input type="button" id="image1" value="选择图片" style="width:80px;height:34px;"/>
+                    </span>
+                    <span>
+                    	<em>详细</em>
+                        <div class="admin_tgxz">
+                            <div class="admin_tgxz_n2">
+                                <input name="pro_attr[0][t]" type="checkbox" value="CPA" <eq name="pro.pro_attr.CPA.t" value="CPA">checked</eq>>
+                                <i>CPA</i>
+                                <input class="admin_tgxz_j" name="pro_attr[0][sh_price]" value="{$pro.pro_attr.CPA.sh_price}" type="text" placeholder="上家价格" onchange="change(this,1)">
+                                <input class="admin_tgxz_j" name="pro_attr[0][price]" value="{$pro.pro_attr.CPA.price}" type="text" placeholder="用户价格" onchange="change(this,1)">
+                                <select name="pro_attr[0][type]">
+                                    <option value="1" <eq name="pro.pro_attr.CPA.type" value="1">selected</eq> >日结</option>
+                                    <option value="2" <eq name="pro.pro_attr.CPA.type" value="2">selected</eq>>周结</option>
+                                    <option value="3" <eq name="pro.pro_attr.CPA.type" value="3">selected</eq>>月结</option>
+                                </select>
+                                <input name="pro_attr[0][com]" type="checkbox" value="1" <eq name="pro.pro_attr.CPA.com" value="1">checked</eq>>
+                                <i>推荐</i>
+                            </div>
+                            <div class="admin_tgxz_n2">
+                                <input name="pro_attr[1][t]" type="checkbox" value="CPS"  <eq name="pro.pro_attr.CPS.t" value="CPS">checked</eq>>
+                                <i>CPS</i>
+                                <input class="admin_tgxz_j" name="pro_attr[1][sh_price]"  value="{$pro.pro_attr.CPS.sh_price}" type="text" placeholder="上家价格" onchange="change(this,1)">
+                                <input class="admin_tgxz_j" name="pro_attr[1][price]"  value="{$pro.pro_attr.CPS.price}" type="text" placeholder="用户价格" onchange="change(this,1)">
+                                <select name="pro_attr[1][type]">
+                                    <option value="1" <eq name="pro.pro_attr.CPS.type" value="1">selected</eq>>日结</option>
+                                    <option value="2" <eq name="pro.pro_attr.CPS.type" value="2">selected</eq>>周结</option>
+                                    <option value="3" <eq name="pro.pro_attr.CPS.type" value="3">selected</eq>>月结</option>
+                                </select>
+                                <input name="pro_attr[1][com]" type="checkbox" value="1" <eq name="pro.pro_attr.CPS.com" value="1">checked</eq>>
+                                <i>推荐</i>
+                            </div>
+                            <div class="admin_tgxz_n2">
+                                <input name="pro_attr[2][t]" type="checkbox" value="CPC" <eq name="pro.pro_attr.CPC.t" value="CPC">checked</eq>>
+                                <i>CPC</i>
+                                <input class="admin_tgxz_j" name="pro_attr[2][sh_price]" value="{$pro.pro_attr.CPC.sh_price}" type="text" placeholder="上家价格" onchange="change(this,1)">
+                                <input class="admin_tgxz_j" name="pro_attr[2][price]" value="{$pro.pro_attr.CPC.price}" type="text" placeholder="用户价格" onchange="change(this,1)">
+                                <select name="pro_attr[2][type]">
+                                    <option value="1" <eq name="pro.pro_attr.CPC.type" value="1">selected</eq>>日结</option>
+                                    <option value="2" <eq name="pro.pro_attr.CPC.type" value="2">selected</eq>>周结</option>
+                                    <option value="3" <eq name="pro.pro_attr.CPC.type" value="3">selected</eq>>月结</option>
+                                </select>
+                                <input name="pro_attr[2][com]" type="checkbox" value="1" <eq name="pro.pro_attr.CPC.com" value="1">checked</eq>>
+                                <i>推荐</i>
+                            </div>
+                            <div class="admin_tgxz_n2">
+                                <input name="pro_attr[3][t]" type="checkbox" value="CPM" <eq name="pro.pro_attr.CPM.t" value="CPM">checked</eq>>
+                                <i>CPM</i>
+                                <input class="admin_tgxz_j" name="pro_attr[3][sh_price]" value="{$pro.pro_attr.CPM.sh_price}" type="text" placeholder="上家价格" onchange="change(this,1)">
+                                <input class="admin_tgxz_j" name="pro_attr[3][price]" value="{$pro.pro_attr.CPM.price}" type="text" placeholder="用户价格" onchange="change(this,1)">
+                                <select name="pro_attr[3][type]">
+                                    <option value="1" <eq name="pro.pro_attr.CPM.type" value="1">selected</eq>>日结</option>
+                                    <option value="2" <eq name="pro.pro_attr.CPM.type" value="2">selected</eq>>周结</option>
+                                    <option value="3" <eq name="pro.pro_attr.CPM.type" value="3">selected</eq>>月结</option>
+                                </select>
+                                <input name="pro_attr[3][com]" type="checkbox" value="1" <eq name="pro.pro_attr.CPM.com" value="1">checked</eq>>
+                                <i>推荐</i>
+                            </div>
+                            <div class="admin_tgxz_n2">
+                                <input name="pro_attr[4][t]" type="checkbox" value="meiti" <eq name="pro.pro_attr.meiti.t" value="meiti">checked</eq>>
+                                <i>富媒体</i>
+                                <input class="admin_tgxz_j" name="pro_attr[4][sh_price]" value="{$pro.pro_attr.meiti.sh_price}" type="text" placeholder="上家价格" onchange="change(this,1)">
+                                <input class="admin_tgxz_j" name="pro_attr[4][price]" value="{$pro.pro_attr.meiti.price}" type="text" placeholder="用户价格" onchange="change(this,1)">
+                                <select name="pro_attr[4][type]">
+                                    <option value="1" <eq name="pro.pro_attr.meiti.type" value="1">selected</eq>>日结</option>
+                                    <option value="2" <eq name="pro.pro_attr.meiti.type" value="1">selected</eq>>周结</option>
+                                    <option value="3" <eq name="pro.pro_attr.meiti.type" value="1">selected</eq>>月结</option>
+                                </select>
+                                <input name="pro_attr[4][com]" type="checkbox" value="1" <eq name="pro.pro_attr.meiti.com" value="1">checked</eq>>
+                                <i>推荐</i>
+                            </div>
+                        </div>
+                    </span>
+                    <span>
+                    	<em>详情介绍</em>
+                        <div class="admin_bjq" >
+                            <textarea id="editor" name="pro_content">{$pro.content}</textarea>
+                        </div>
+                    </span>
+                    <span>
+                    	<em>客服</em>
+                        <div class="admin_tgxz">
+                            <!--<label>-->
+                                <!--<input name="server[]" type="checkbox" value="1" <if condition="in_array(1,$pro['service'])">checked</if> />-->
+                                <!--<i>ONE</i>-->
+                            <!--</label>-->
+                            <!--<label>-->
+                                <!--<input name="server[]" type="checkbox" value="2"  <if condition="in_array(2,$pro['service'])">checked</if>>-->
+                                <!--<i>TOW</i>-->
+                            <!--</label>-->
+
+                            <volist name="kefu" id="kf">
+                                <label>
+                                    <input name="server[]" type="checkbox" value="{$kf.id}" <if condition="in_array($kf['id'],$pro['service'])">checked</if> >
+                                    <i>{$kf.name}</i>
+                                </label>
+                            </volist>
+                        </div>
+                    </span>
+                <div class="admin_bg_b2 admin_bg_b3">
+                    <input name="" type="submit" value="确认添加" class="btn-submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script  type="text/javascript">
+    KindEditor.ready(function(K) {
+        var editor = K.editor({
+            allowFileManager : true
+        });
+        K('#image1').click(function() {
+            editor.loadPlugin('image', function() {
+                editor.plugin.imageDialog({
+                    imageUrl : K('#url1').val(),
+                    clickFn : function(url, title, width, height, border, align) {
+                        K('#url1').val(url);
+                        K('#show-image').attr('src',url).show();
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+        var editor1 = K.create('#editor', {
+            cssPath : '__PLUG__/kindeditor-4.1.10/plugins/code/prettify.css',
+            uploadJson : '__PLUG__/kindeditor-4.1.10/php/upload_json.php',
+            fileManagerJson : '__PLUG__/kindeditor-4.1.10/php/file_manager_json.php',
+            allowFileManager : true,
+            width:$('.admin_bjq').width(),
+            height:400,
+            afterCreate : function() {
+                var self = this;
+                K.ctrl(document, 13, function() {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+                K.ctrl(self.edit.doc, 13, function() {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+                $('form').validate();
+                $('form').on('submit',function (e) {
+                    e.preventDefault();
+                    if($('form').valid()){
+                        $('form').ajaxSubmit({
+                            success:function(data){
+                                if(data.status=1){
+                                    redirect('__URL__/index',data.msg,3);
+                                }else{
+                                    layer.msg(data.msg, {icon: 1});
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        });
+        prettyPrint();
+    });
+
+    function change(obj,id) {
+        var reg = /^\d+(\.\d+)?$/;
+        $this = $(obj);
+        if($this.val()!=''){
+            $this.removeAttr('style');
+        }
+
+        if(id==1){
+            if(!reg.test($this.val())){
+                alert('请填写数字');
+                $this.css('border','1px solid red');
+            }
+        }
+    }
+</script>
+<include file="Common:footer"/>

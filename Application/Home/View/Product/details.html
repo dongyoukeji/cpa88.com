@@ -1,0 +1,83 @@
+<include file="Common:header1"/>
+    <!-- 站中 -->
+    <div class="pro_list_main">
+        <div class="search">
+            <strong>PRODUCT 产品</strong>
+				<span class="check1">
+					<a href="{:U('/product/0')}"<empty name="Think.get.t">id="check1"</empty>>全部</a>
+					<a href="{:U('/product/1')}" <eq name="Think.get.t" value="1">id="check1"</eq>>PC端</a>
+					<a href="{:U('/product/2')}" <eq name="Think.get.t" value="2">id="check1"</eq>>移动端</a>
+				</span>
+				<span class="check2">
+					<a href="javascript:void(0);"  <empty name="Think.get.tt">id="check2"</empty>  data-role="0" >全部</a>
+                    <a href="javascript:void(0);"  <eq name="Think.get.tt" value="CPA">id="check2"</eq> data-role="CPA">CPA</a>
+                    <a href="javascript:void(0);"  <eq name="Think.get.tt" value="CPS">id="check2"</eq> data-role="CPS">CPS</a>
+                    <a href="javascript:void(0);"  <eq name="Think.get.tt" value="CPC">id="check2"</eq> data-role="CPC">CPC</a>
+                    <a href="javascript:void(0);"  <eq name="Think.get.tt" value="CPM">id="check2"</eq> data-role="CPM">CPM</a>
+                    <a href="javascript:void(0);"  <eq name="Think.get.tt" value="meiti">id="check2"</eq> data-role="meiti">富媒体</a>
+				</span>
+            <div>
+                <input type="text" placeholder="输入产品名称" class="search_input">
+                <input type="submit" value="" class="search_logo">
+            </div>
+        </div>
+        <div class="pro_list_main_details">
+            <a class="product">
+                <eq name="vo.type" value="1">
+                    <b>
+                        PC端
+                        <span class="triangle"></span>
+                    </b>
+                    <else />
+                    <span>
+						移动端
+						<span class="triangle2"></span>
+					</span>
+                </eq>
+
+                <strong>
+                    <img src="{$vo.image}" alt="{$vo.title}">
+                </strong>
+                <p>推广中</p>
+            </a>
+				<span class="pro_intro">
+					<strong>
+                        <em>名称：</em>
+                        <b>{$vo.title}</b>
+                    </strong>
+					<strong>
+                        <em>类型：</em>
+                        <b> <eq name="vo.type" value="1"> PC端 <else />移动端 </eq></b>
+                    </strong>
+                    <strong>
+                        <em>推广：</em>
+                        <b>{$vo.attr}</b>
+                    </strong>
+					<strong>
+                        <em>方式：</em>
+                        <b>{$vo.balance_time}</b>
+                    </strong>
+					<strong>
+                        <em>价格：</em>
+                        <i>{$vo.price}</i>
+                    </strong>
+				</span>
+            <strong>
+                <!--<volist name="vo.service" id="vo1">-->
+                    <!--<a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin={$kefu[$vo1-1]["qq"]}&site=qq&menu=yes'-->
+                       <!--title='在线即时交谈'>CPA-{$kefu[$vo1-1]["name"]}</a>-->
+                <!--</volist>-->
+
+                <volist name="kefu" id="kf">
+                    <if condition="in_array($kf['id'],$vo['service'])">
+                        <a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin={$kf.qq}&site=qq&menu=yes'
+                           title='在线即时交谈'>{$kf.name}</a>
+                    </if>
+                </volist>
+            </strong>
+        </div>
+        <div class="product_introduct">
+            {$vo.content|htmlspecialchars_decode}
+        </div>
+    </div>
+<include file="Common:footer"/>

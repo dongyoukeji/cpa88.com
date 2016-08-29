@@ -1,0 +1,7 @@
+php.ini
+post_max_size = 500M ;post上限
+max_execution_time = 1800 ; Maximum execution time of each script, in seconds脚本最大执行时间
+max_input_time = 1800 ; Maximum amount of time each script may spend parsing request data 
+memory_limit = 128M ; Maximum amount of memory a script may consume (128MB)内存上限
+nginx.conf配置
+client_max_body_size 20m;

@@ -1,0 +1,704 @@
+[ 2016-05-30T20:26:09+08:00 ] 66.249.65.40 /Home/Index/lists.html?sz=4&cid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('5') ORDER BY create_time desc LIMIT 0,4   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:26:09+08:00 ] 66.249.65.40 /Home/Index/user_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+
+[ 2016-05-30T20:26:10+08:00 ] 66.249.65.40 /Home/Index/lists.html?sz=4&cid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') ORDER BY create_time desc LIMIT 0,4   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:26:10+08:00 ] 66.249.65.40 /Home/Index/lists.html?sz=5&cid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('6') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('6') ORDER BY create_time desc LIMIT 0,5   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:26:11+08:00 ] 66.249.65.40 /Home/Index/get_flink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `think_flink` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`description`,`ico`,`uri` FROM `think_flink` WHERE ( status=0 ) ORDER BY sort asc LIMIT 10   [ RunTime:0.0005s ]
+
+[ 2016-05-30T20:26:11+08:00 ] 66.249.65.40 /Home/Index/lists.html?sz=1&cid=4&sp=250
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') ORDER BY create_time desc LIMIT 0,1   [ RunTime:0.0004s ]
+
+[ 2016-05-30T20:26:12+08:00 ] 66.249.65.40 /Home/Index/is_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+
+[ 2016-05-30T20:29:12+08:00 ] 117.62.89.188 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`desc`,`image`,`type`,`attr`,`price`,`com`,`balance_time`,`service`,`create_time` FROM `think_product` WHERE `status` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000167s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000207s ]
+
+[ 2016-05-30T20:29:15+08:00 ] 117.62.89.188 /Home/Index/get_flink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `think_flink` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`description`,`ico`,`uri` FROM `think_flink` WHERE ( status=0 ) ORDER BY sort asc LIMIT 10   [ RunTime:0.0003s ]
+
+[ 2016-05-30T20:29:16+08:00 ] 117.62.89.188 /Home/Index/is_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-05-30T20:29:16+08:00 ] 117.62.89.188 /Home/Index/is_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-05-30T20:29:16+08:00 ] 117.62.89.188 /Home/Index/user_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+
+[ 2016-05-30T20:29:16+08:00 ] 117.62.89.188 /Home/Index/lists.html?sz=4&cid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('5') LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('5') ORDER BY create_time desc LIMIT 0,4   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:29:16+08:00 ] 117.62.89.188 /Home/Index/lists.html?sz=4&cid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') ORDER BY create_time desc LIMIT 0,4   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:29:16+08:00 ] 117.62.89.188 /Home/Index/lists.html?sz=5&cid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('6') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('6') ORDER BY create_time desc LIMIT 0,5   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:29:16+08:00 ] 117.62.89.188 /Home/Index/lists.html?sz=1&cid=4&sp=250
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') ORDER BY create_time desc LIMIT 0,1   [ RunTime:0.0004s ]
+
+[ 2016-05-30T20:29:17+08:00 ] 117.62.89.188 /Home/Index/com_list.html?sz=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` WHERE `com` LIKE '%1%' AND `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_product` WHERE `com` LIKE '%1%' AND `status` = 0 ORDER BY sort asc,id asc LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2016-05-30T20:29:20+08:00 ] 117.62.89.188 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+
+[ 2016-05-30T20:37:49+08:00 ] 117.62.89.188 /pro_details/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`title`,`desc`,`image`,`content`,`type`,`attr`,`price`,`com`,`balance_time`,`service`,`create_time` FROM `think_product` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: p /home/cpa88_cs/Application/Runtime/Cache/Home/c0e5e04525859b98127e0609ff818963.php 第 13 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Runtime/Cache/Home/c0e5e04525859b98127e0609ff818963.php 第 51 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Runtime/Cache/Home/c0e5e04525859b98127e0609ff818963.php 第 52 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Runtime/Cache/Home/c0e5e04525859b98127e0609ff818963.php 第 56 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Runtime/Cache/Home/c0e5e04525859b98127e0609ff818963.php 第 57 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Runtime/Cache/Home/c0e5e04525859b98127e0609ff818963.php 第 58 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Runtime/Cache/Home/c0e5e04525859b98127e0609ff818963.php 第 59 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Runtime/Cache/Home/c0e5e04525859b98127e0609ff818963.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000208s ]
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/get_flink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `think_flink` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`description`,`ico`,`uri` FROM `think_flink` WHERE ( status=0 ) ORDER BY sort asc LIMIT 10   [ RunTime:0.0004s ]
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/is_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/user_pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/is_login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/lists.html?sz=4&cid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') ORDER BY create_time desc LIMIT 0,4   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/lists.html?sz=4&cid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('5') LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('5') ORDER BY create_time desc LIMIT 0,4   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/lists.html?sz=5&cid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` WHERE `status` = 0 AND `cid` IN ('6') LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('6') ORDER BY create_time desc LIMIT 0,5   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+NOTIC: [8] Undefined index: sp /home/cpa88_cs/Application/Home/Controller/BaseController.class.php 第 342 行.
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/com_list.html?sz=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` WHERE `com` LIKE '%1%' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: q /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+SQL: SELECT * FROM `think_product` WHERE `com` LIKE '%1%' ORDER BY sort asc,id desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-05-30T20:37:50+08:00 ] 117.62.89.188 /Home/Product/lists.html?sz=1&cid=4&sp=250
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`description`,`create_time` FROM `think_article` WHERE `status` = 0 AND `cid` IN ('4') ORDER BY create_time desc LIMIT 0,1   [ RunTime:0.0002s ]
+
+[ 2016-05-30T20:37:54+08:00 ] 101.226.33.204 /Home/Product/com_list.html?sz=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: q /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+
+[ 2016-05-30T20:37:54+08:00 ] 180.153.163.190 /Home/Product/com_list.html?sz=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: q /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+
+[ 2016-05-30T20:37:59+08:00 ] 180.153.163.191 /Home/Product/com_list.html?sz=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: q /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+
+[ 2016-05-30T20:38:06+08:00 ] 180.153.160.28 /Home/Product/com_list.html?sz=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: q /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+
+[ 2016-05-30T20:38:15+08:00 ] 180.153.206.13 /Home/Product/com_list.html?sz=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: tt /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+NOTIC: [8] Undefined index: q /home/cpa88_cs/Application/Home/Controller/ProductController.class.php 第 50 行.
+
+[ 2016-05-30T20:53:42+08:00 ] 199.58.86.206 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+NOTIC: [2] filemtime(): stat failed for ./Application/Home/View/Robots.txt/index.html /home/cpa88_cs/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 104 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002444s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002945s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000283s ]
+
+[ 2016-05-30T20:53:44+08:00 ] 199.58.86.206 /new_detail.asp?sid=141&id=714
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-05-30T21:07:19+08:00 ] 66.249.65.249 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+NOTIC: [2] filemtime(): stat failed for ./Application/Home/View/Robots.txt/index.html /home/cpa88_cs/ThinkPHP/Library/Behavior/ReadHtmlCacheBehavior.class.php 第 104 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001706s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000252s ]
+
+[ 2016-05-30T21:07:19+08:00 ] 66.249.65.137 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`desc`,`image`,`type`,`attr`,`price`,`com`,`balance_time`,`service`,`create_time` FROM `think_product` WHERE `status` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000146s ]
+
+[ 2016-05-30T21:16:52+08:00 ] 66.249.65.130 /new_detail.asp?id=743
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2016-05-30T21:28:36+08:00 ] 66.249.65.88 /?jdfwkey=nqqrf2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`desc`,`image`,`type`,`attr`,`price`,`com`,`balance_time`,`service`,`create_time` FROM `think_product` WHERE `status` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000229s ]
+
+[ 2016-05-30T22:00:15+08:00 ] 220.181.108.103 /new_detail.asp?id=685
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000183s ]
+
+[ 2016-05-30T23:21:50+08:00 ] 220.181.108.120 /new_detail.asp?id=570
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found /home/cpa88_cs/ThinkPHP/Library/Think/Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-05-30T23:40:24+08:00 ] 52.51.32.255 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001774s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002091s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`desc`,`image`,`type`,`attr`,`price`,`com`,`balance_time`,`service`,`create_time` FROM `think_product` WHERE `status` = 0 ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000183s ]
+

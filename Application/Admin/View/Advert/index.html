@@ -1,0 +1,39 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">广告列表</a>
+            <a href="__URL__/add">广告添加</a>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg4">编号</li>
+                <li class="admin_bg4">广告标题</li>
+                <li class="admin_bg4">广告图片</li>
+                <li class="admin_bg4">广告链接</li>
+                <li class="admin_bg4">状态</li>
+                <li class="admin_bg4">操作</li>
+            </ul>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <ul>
+                        <li class="admin_bg4">{$vo.id}</li>
+                        <li class="admin_bg4">{$vo.title}</li>
+                        <li class="admin_bg4"><img src="{$vo.image}" alt="" height="30" style="vertical-align: middle;"></li>
+                        <li class="admin_bg4">{$vo.url}</li>
+                        <li class="admin_bg4"><eq name="vo.status" value="0">正常<else />禁用</eq> </li>
+                        <li class="admin_bg4">
+                            <a href="__URL__/add?id={$vo.id}">编辑</a>
+                            <eq name="vo.status" value="0"><a href="__URL__/status?id={$vo.id}&t=1">禁用</a><else /><a href="__URL__/status?id={$vo.id}&t=0">正常</a></eq>
+                            <a href="__URL__/del?id={$vo.id}" class="confirm" data-role="您确定要删除吗？删除后数据将不能恢复！">删除</a>
+                        </li>
+                    </ul>
+                </volist>
+                <div class="admin_null">{$page}</div>
+                <else />
+                <div class="admin_null">暂无数据</div>
+            </notempty>
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

@@ -1,0 +1,12 @@
+[ 2016-06-10T12:03:50+08:00 ] 125.64.94.206 /index.php?m=search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+ERR: 无法加载模块:Search
+
+[ 2016-06-10T12:03:50+08:00 ] 125.64.94.206 /index.php?m=wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+ERR: 无法加载模块:Wap
+

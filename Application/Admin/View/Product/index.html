@@ -1,0 +1,53 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">产品列表</a>
+            <a href="__URL__/add">产品添加</a>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg2">序号</li>
+                <li class="admin_bg4">产品名称</li>
+                <li class="admin_bg4">产品图片</li>
+                <li class="admin_bg1">产品类型</li>
+                <li class="admin_bg3">推广方式</li>
+                <li class="admin_bg1">价格</li>
+                <li class="admin_bg1">结算周期</li>
+                <li class="admin_bg6">操作</li>
+            </ul>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <ul>
+                        <li class="admin_bg2">{$vo.id}</li>
+                        <li class="admin_bg4">{$vo.title}</li>
+                        <li class="admin_bg4">
+                            <span><img src="{$vo.image}"></span>
+                        </li>
+                        <li class="admin_bg1">
+                            <volist name="col" id="vo1">
+                                <eq name="vo1.id" value="$vo.type">{$vo1.title}</eq>
+                            </volist>
+                        </li>
+                        <li class="admin_bg3">
+                            {$vo.attr|attr_com=$vo['com']}
+                        </li>
+                        <li class="admin_bg1">{$vo.price|replace_di}</li>
+                        <li class="admin_bg1">{$vo.balance_time|jiesuan} </li>
+                        <li class="admin_bg6">
+                            <a href="__URL__/edit?pid={$vo.id}">编辑</a>
+                            <eq name="vo.status" value="0"><a href="__URL__/status?pid={$vo.id}&t=1">下架</a><else /><a href="__URL__/status?pid={$vo.id}&t=0">上架</a></eq>
+                            <!--<a href="__URL__/del?pid={$vo.id}" class="confirm" data-role="您确定要删除吗？删除后数据将不能恢复！">删除</a>-->
+                        </li>
+                    </ul>
+                </volist>
+                <div class="admin_null">{$page}</div>
+                <else />
+                <div class="admin_null">暂无数据</div>
+            </notempty>
+
+
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

@@ -1,0 +1,104 @@
+<include file="Common:header1"/>
+<div class="pro_main">
+    <div class="search">
+        <strong>PRODUCT 产品</strong>
+				<span class="check1">
+					<a href="{:U('/product/0')}" <empty name="Think.get.t">id="check1"</empty> data-role="0">全部</a>
+					<a href="{:U('/product/1')}" <eq name="Think.get.t" value="1">id="check1"</eq> data-role="1">PC端</a>
+					<a href="{:U('/product/2')}" <eq name="Think.get.t" value="2">id="check1"</eq>  data-role="2">移动端</a>
+				</span>
+				<span class="check2">
+					<a href="#"  <empty name="Think.get.tt">id="check2"</empty>  data-role="0" >全部</a>
+					<a href="#"  <eq name="Think.get.tt" value="CPA">id="check2"</eq> data-role="CPA">CPA</a>
+					<a href="#"  <eq name="Think.get.tt" value="CPS">id="check2"</eq> data-role="CPS">CPS</a>
+					<a href="#"  <eq name="Think.get.tt" value="CPC">id="check2"</eq> data-role="CPC">CPC</a>
+					<a href="#"  <eq name="Think.get.tt" value="CPM">id="check2"</eq> data-role="CPM">CPM</a>
+					<a href="#"  <eq name="Think.get.tt" value="meiti">id="check2"</eq> data-role="meiti">富媒体</a>
+				</span>
+        <div>
+            <input type="text" placeholder="输入产品名称"  <notempty name="Think.get.q">value="{$Think.get.q|urldecode}" </notempty>  class="search_input">
+            <input type="button" value="" class="search_logo">
+        </div>
+    </div>
+    <div class="pro_main_list">
+        <notempty name="list">
+            <volist name="list" id="vo">
+                <if condition="$vo.type eq 1">
+                    <a href="{:U('/pro_details/'.$vo['id'])}">
+                        <strong>
+                            <i class="type1">
+                                PC
+                                <b class="triangle0 triangle1"></b>
+                            </i>
+                            <div></div>
+                            <img src="{$vo.image}" alt="{$vo.title}">
+                            <em>推广中</em>
+                        </strong>
+					<span class="pro_intro">
+						<strong>
+                            <em>名称：</em>
+                            <b>{$vo.title}</b>
+                        </strong>
+						<strong>
+                            <em>类型：</em>
+                            <b>PC端</b>
+                        </strong>
+                        <strong>
+                            <em>推广：</em>
+                            <b>{$vo.attr}</b>
+                        </strong>
+						<strong>
+                            <em>方式：</em>
+                            <b>{$vo.balance_time}</b>
+                        </strong>
+						<strong>
+                            <em>价格：</em>
+                            <i>{$vo.price}</i>
+                        </strong>
+					</span>
+                    </a>
+                    <else />
+                    <a href="{:U('/pro_details/'.$vo['id'])}">
+                        <strong>
+                            <i class="type2">
+                                APP
+                                <b class="triangle0 triangle2"></b>
+                            </i>
+                            <div></div>
+                            <img src="{$vo.image}" alt="{$vo.title}">
+                            <em>推广中</em>
+                        </strong>
+					<span class="pro_intro">
+						<strong>
+                            <em>名称：</em>
+                            <b>{$vo.title}</b>
+                        </strong>
+						<strong>
+                            <em>类型：</em>
+                            <b>移动端</b>
+                        </strong>
+                        <strong>
+                            <em>推广：</em>
+                            <b>{$vo.attr}</b>
+                        </strong>
+						<strong>
+                            <em>方式：</em>
+                            <b>{$vo.balance_time}</b>
+                        </strong>
+						<strong>
+                            <em>价格：</em>
+                            <i>{$vo.price}</i>
+                        </strong>
+					</span>
+                    </a>
+                </if>
+            </volist>
+            <else />
+            <div class="product_list_infor_none" style="width: 97%;">
+                没有添加相应的产品
+            </div>
+        </notempty>
+        <div class="page cle">{$page}</div>
+    </div>
+</div>
+<include file="Common:footer"/>

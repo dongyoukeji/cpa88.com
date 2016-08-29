@@ -1,0 +1,50 @@
+<include file="Common:header1"/>
+<div class="notice_main">
+    <div class="search">
+        <strong>NOTICE 通知</strong>
+        <span class="check2">
+            <a href="{:U('/notice/0')}" data-role="0"  <empty name="Think.get.cid">id="check2"</empty> >全部</a>
+            <a href="{:U('/notice/4')}" data-role="4" <eq name="Think.get.cid" value="4">id="check2"</eq> >公告</a>
+            <a href="{:U('/notice/5')}" data-role="5" <eq name="Think.get.cid" value="5">id="check2"</eq>>常见问题</a>
+            <a href="{:U('/notice/6')}" data-role="6"  <eq name="Think.get.cid" value="6">id="check2"</eq>>结算通知</a>
+        </span>
+        <div>
+            <input type="text" placeholder="输入关键词" value="{$Think.get.q|urldecode}" class="search_input">
+            <input type="submit" value="" class="search_logo">
+        </div>
+    </div>
+    <div class="notice_main_problem" id="notice_main_problem">
+        <notempty name="list">
+
+            <volist name="list" id="vo">
+                <eq name="vo.cid" value="4">
+                    <ul>
+                        <li>
+                            <a href="{:U('/notices/'.$vo['id'])}">{$vo.title}</a>
+                            <eq name="vo.cid" value="4"><b>[公告]</b></eq>
+                            <strong>{$vo.create_time|date='Y-m-d',###}</strong>
+                        </li>
+                    </ul>
+                </eq>
+            </volist>
+            <volist name="list" id="vo">
+                <neq name="vo.cid" value="4">
+                    <ul>
+                        <li>
+                            <a href="{:U('/notices/'.$vo['id'])}">{$vo.title}</a>
+                            <eq name="vo.cid" value="5"><b><em>[常见问题]</em></b></eq>
+                            <eq name="vo.cid" value="6"><i>[结算]</i></eq>
+                            <strong>{$vo.create_time|date='Y-m-d',###}</strong>
+                        </li>
+                    </ul>
+                </neq>
+            </volist>
+            <div class="page1">{$page}</div>
+            <else />
+            <div class="product_list_infor_none" style="width: 97%;">
+                没有添加相应的产品
+            </div>
+        </notempty>
+    </div>
+</div>
+<include file="Common:footer"/>

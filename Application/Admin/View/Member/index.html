@@ -1,0 +1,75 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">用户列表</a>
+            <form action="" method="get">
+                <div class="admin_bg_t_ss">
+                    <span>
+                        <input name="mname" value="{$search.name}" type="text" placeholder="用户">
+                        <input name="" type="submit" value="搜索">
+                        <input type="button" class="btn-all" data-role="__URL__/index" value="所有">
+                    </span>
+                    <strong>
+                        <select name="status">
+                            <option value="-1">用户类型</option>
+                            <option value="0" <eq name="search.status" value="0">selected</eq>>个人</option>
+                            <option value="1" <eq name="search.status" value="1">selected</eq>>企业</option>
+                        </select>
+                    </strong>
+                    <span>
+                        <input name="pname" id="pname" value="{$search.pname}" type="text" placeholder="包名">
+                        <!--<input class="btn-package" type="button" value="搜索">-->
+                    </span>
+                    <strong>
+                        <select name="package" class="package">
+                            <option value="">产品类型</option>
+                            <option value="1" <eq name="search.package" value="1">selected</eq>>PC端</option>
+                            <option value="2" <eq name="search.package" value="2">selected</eq>>移动端</option>
+                        </select>
+                    </strong>
+                </div>
+            </form>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg1">编号</li>
+                <li class="admin_bg6">注册日期</li>
+                <li class="admin_bg7">用户名</li>
+                <li class="admin_bg5">用户类型</li>
+                <!--<li class="admin_bg5">登录密码</li>-->
+                <li class="admin_bg5">积分</li>
+                <li class="admin_bg5">产品数量</li>
+                <li class="admin_bg4">操作</li>
+            </ul>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <ul>
+                        <li class="admin_bg1">{$vo.id}</li>
+                        <li class="admin_bg6">{$vo.create_time|date='Y-m-d',###}</li>
+                        <li class="admin_bg7">{$vo.username}</li>
+                        <li class="admin_bg5"><eq name="vo.type" value="0">个人<else />企业</eq></li>
+                        <!--<li class="admin_bg5">10</li>-->
+                        <li class="admin_bg5">{$vo.jifen}</li>
+                        <li class="admin_bg5">{$vo.id|get_pronum}</li>
+                        <li class="admin_bg4">
+                            <a href="__URL__/see?mid={$vo.id}">基本信息</a>
+                            <a href="__URL__/rest_pwd?mid={$vo.id}" class="confirm" data-role="您确定要重置密码吗？重置后原密码将不能使用。">重置密码</a>
+                        </li>
+                    </ul>
+                </volist>
+                <div class="admin_null">{$page}</div>
+                <else />
+                <div class="admin_null">暂无数据</div>
+            </notempty>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.btn-package').click(function (e) {
+
+        });
+    });
+</script>
+<include file="Common:footer"/>

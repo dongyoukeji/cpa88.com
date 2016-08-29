@@ -1,0 +1,6 @@
+<?php
+//000000000060a:22:{s:2:"id";s:1:"2";s:3:"cid";s:1:"5";s:5:"title";s:42:"我兑换的礼品什么时候能收到？";s:6:"author";s:0:"";s:8:"keywords";s:0:"";s:11:"description";s:0:"";s:3:"ico";s:0:"";s:5:"image";s:0:"";s:4:"file";s:0:"";s:7:"content";s:968:"&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;虚拟礼品订单成功提交后，管理员将在兑换成功2个工作日内完成审核并发送。技术员可以在“我的账户-我兑换的礼品”页面直接查看礼品的发送状态并领取礼品。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;实物礼品（2345发货礼品）订单成功提交后，管理员将在兑换成功2个工作日内完成审核并发送。查看快递详情&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;现金礼包订单成功提交后，管理员将在兑换成功2个工作日内完成审核并安排打款，打款完成后一般1-3个工作日可到账。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;所有礼品遇周五、周六及节假日延后审核及发送。&lt;/span&gt;";s:6:"extend";s:0:"";s:4:"hits";s:2:"73";s:3:"com";s:1:"0";s:3:"hot";s:1:"0";s:3:"new";s:1:"0";s:4:"head";s:1:"0";s:3:"top";s:1:"0";s:3:"img";s:1:"0";s:11:"create_time";s:10:"1464348743";s:4:"time";s:1:"0";s:4:"sort";s:1:"0";s:6:"status";s:1:"0";}
+?>

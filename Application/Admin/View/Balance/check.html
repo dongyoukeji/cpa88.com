@@ -1,0 +1,201 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 480px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">XONE/{$member.id|get_member} 结算信息</a>
+            <span class="admin_yhgl_top">
+                <a href="__URL__/index">返回结算列表</a>
+            </span>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg6">结算时间</li>
+                <li class="admin_bg7">产品</li>
+                <li class="admin_bg5">类型</li>
+                <li class="admin_bg5">推广方式</li>
+                <li class="admin_bg5">结算方式</li>
+                <li class="admin_bg5">价格</li>
+                <li class="admin_bg4">数据</li>
+            </ul>
+            <ul>
+                <li class="admin_bg6"><p></p>{$pro.time|date='Y-m-d',###}</li>
+                <li class="admin_bg7">{$pro.pid|get_pack_name}</li>
+                <li class="admin_bg5">{$pro.pid|get_pack_t}</li>
+                <li class="admin_bg5">{$pro.pid|get_pack_type}</li>
+                <li class="admin_bg5">{$pro.pid|get_pack_jiesuan}</li>
+                <li class="admin_bg5">{$pro.price}</li>
+                <li class="admin_bg4"><a href="__URL__/export?id={$Think.get.id}&mid={$Think.get.mid}&pid={$pro.pid}">下载</a></li>
+                <div class="team_bottom">
+                    <div class="admin_tgfs">
+                        <a href="#" id="admin_tgfs_xz">{$pro.pid|get_pack_type}</a>
+                    </div>
+                    <div class="admin_tgfs admin_tgfs2">
+                        <a href="#" id="admin_tgfs_xz">{$pro.pid|get_pro_name}</a>
+                    </div>
+                    <label class="admin_tgfs_t">
+                        <i>时间</i>
+                        <i>上家单价</i>
+                        <i>用户单价</i>
+                        <i>上家数据</i>
+                        <i>用户数据</i>
+                        <i>上家核减</i>
+                        <i>用户核减</i>
+                        <i>上家金额</i>
+                        <i>用户金额(支付/元)</i>
+                        <i>收益金额</i>
+                        <i>结算状态</i>
+                    </label>
+                    <notempty name="list">
+                        <volist name="list" id="vo1">
+                        <volist name="list" id="vo1">
+                            <label>
+                                <i>{$vo1.time|date='Y-m-d',###}</i>
+                                <i>{$vo1.sh_price}</i>
+                                <i>{$vo1.price}</i>
+                                <i>{$vo1.real}</i>
+                                <i>{$vo1.qudao}</i>
+                                <i>{$vo1.sh_checked}</i>
+                                <i>{$vo1.checked}</i>
+                                <i>
+                                    <eq name="vo1.sh_total" value="0">
+                                        -
+                                        <else />
+                                        {$vo1.sh_total}
+                                    </eq>
+                                </i>
+                                <i>
+                                    <eq name="vo1.total" value="0">
+                                        -
+                                        <else />
+                                        {$vo1.total}
+                                    </eq>
+                                </i>
+                                <i>
+                                    <eq name="vo1.shouyi" value="0">
+                                        -
+                                        <else />
+                                        {$vo1.shouyi}
+                                    </eq>
+                                </i>
+                                <i>
+                                    <if condition="($vo1.status eq 0) and ($vo1.total eq 0) ">
+                                        -
+                                    </if>
+                                    <if condition="($vo1.status eq 0) and ($vo1.total neq 0) ">
+                                        未结算
+                                    </if>
+                                    <if condition="($vo1.status eq 1) and ($vo1.total neq 0) ">
+                                        已结算
+                                    </if>
+                                </i>
+                            </label>
+                        </volist>
+                        <!--<div>-->
+                            <!--{$page}-->
+                        <!--</div>-->
+
+                        <form action="__URL__/add" method="post" enctype="multipart/form-data">
+                            <div class="admin_tgxx">
+                                <input type="hidden" name="id" value="{$pro.id}">
+                                <input type="hidden" name="pay_account" id="pay_account" value="">
+                                <input type="hidden" name="pay_pay" id="pay_pay" value="">
+                                打款截图:
+                                <input type="file" name="file_kuan" id="file_kuan" value="" class="required">
+                                <textarea name="des" cols="" rows="" placeholder="备注信息">{$vo.des}</textarea>
+                            </div>
+                            <div class="admin_skxx">
+                                <eq name="pro.status" value="0">
+                                    <eq name="pay.pay_type" value="0">
+                                        <span class="pay_info">汇款方式:支付宝</span>
+                                        <span class="pay_info">支付宝账号:{$pay.pay_account}</span>
+                                        <span class="pay_info">收款人姓名:{$pay.pay_getname}</span>
+                                        <else />
+                                        <span class="pay_info1">汇款方式:网银</span>
+                                    <span class="pay_info1">银行名称:
+                                    <volist name="bank" id="bk">
+                                        <eq name="key" value="$pay.bank_type">{$bk}</eq>
+                                    </volist>
+                                    </span>
+                                        <span class="pay_info1">开户行:{$pay.bank_name}</span>
+                                        <span class="pay_info1">银行账号:{$pay.pay_account}</span>
+                                        <span class="pay_info1">收款人姓名:{$pay.pay_getname}</span>
+                                    </eq>
+                                    <else />
+                                    <eq name="pay.pay_type" value="0">
+                                        <span class="pay_info">汇款方式:{$pay.pay_type1}</span>
+                                        <span class="pay_info">支付宝账号:{$pay.pay_account}</span>
+                                        <span class="pay_info">收款人姓名:{$pay.pay_getname}</span>
+                                        <else />
+                                        <span class="pay_info1">汇款方式:{$pay.pay_type1}</span>
+                                        <span class="pay_info1">银行名称:{$pay.bank_type1}</span>
+                                        <span class="pay_info1">开户行:{$pay.bank_name}</span>
+                                        <span class="pay_info1">银行账号:{$pay.pay_account}</span>
+                                        <span class="pay_info1">收款人姓名:{$pay.pay_getname}</span>
+                                    </eq>
+                                </eq>
+                            </div>
+                            <div class="admin_bg_b2">
+                                <input type="submit" value="确认结算" name="" >
+                            </div>
+                        </form>
+                    </notempty>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('form').on('submit',function (e) {
+            e.preventDefault();
+            $('form').validate({
+               role:{
+                   file_kuan:{
+                       required:true
+                   }
+               },
+                messages:{
+                    file_kuan:{
+                        required: ""
+                    }
+                }
+            });
+            if($('form').valid()){
+                layer.confirm('您确定要结算吗？结算之后不可撤销', {
+                    btn: ['确定','取消'] //按钮
+                }, function(){
+                    $_result='';
+                    if('{$pay.pay_type}'==0){
+                        $('.pay_info').each(function (index) {
+                            $str =  $(this).text();
+                            $str1 = $str.split(':');
+                            $_result += ','+$str1[1];
+                        });
+                        $('#pay_account').val($_result.substr(1));
+                        $('#pay_pay').val(0);
+                    }else{
+                        $('.pay_info1').each(function (index) {
+                            $str =  $(this).text();
+                            $str1 = $str.split(':');
+                            $_result += ','+$str1[1];
+                        });
+                        $('#pay_account').val($_result.substr(1));
+                        $('#pay_pay').val(1);
+                    }
+
+                    $('form').ajaxSubmit({
+                        success:function(data){
+                            if(data.status=1){
+                                redirect('__URL__/index',data.msg,3);
+                            }else{
+                                layer.msg(data.msg, {icon: 2});
+                            }
+                        }
+                    });
+                });
+            }
+        });
+    });
+</script>
+
+<include file="Common:footer"/>

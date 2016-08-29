@@ -1,0 +1,152 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a>ID:xone</a>
+            <a href="__URL__/see?mid={$Think.get.mid}" id="admin_bg_t_x">基本信息</a>
+            <a href="__URL__/plist?mid={$Think.get.mid}">产品列表</a>
+            <a href="__URL__/add?mid={$Think.get.mid}">添加产品</a>
+            <span class="admin_yhgl_top">
+                <a href="__URL__/index">返回用户列表</a>
+            </span>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg6">注册时间</li>
+                <li class="admin_bg7">用户名</li>
+                <li class="admin_bg5">用户类型</li>
+                <!--<li class="admin_bg5">登录密码</li>-->
+                <li class="admin_bg5">积分</li>
+                <li class="admin_bg5">产品数量</li>
+                <li class="admin_bg4">提现总额</li>
+            </ul>
+            <ul>
+                <li class="admin_bg6">{$member.create_time|date='Y-m-d',###}</li>
+                <li class="admin_bg7">{$member.username}</li>
+                <li class="admin_bg5"><eq name="member.type" value="0">个人<else />企业</eq></li>
+                <!--<li class="admin_bg5">123456</li>-->
+                <li class="admin_bg5">{$member.jifen}</li>
+                <li class="admin_bg5">{$member.id|get_pronum}</li>
+                <li class="admin_bg4">{$member.banlace}</li>
+            </ul>
+            <form action="__URL__/see_info" method="post">
+                <div class="admin_yhjbxx">
+
+                    <span>
+                            <strong>
+                                <em>联系人/公司名称</em>
+                                <input name="real_name" type="text" name="payfor" value="{$member.real_name}">
+                            </strong>
+                            <strong>
+                                <em>联系方式</em>
+                                <input name="tel" type="text" value="{$member.tel}">
+                            </strong>
+                            <strong>
+                                <em>邮箱</em>
+                                <input name="email" type="text" value="{$member.email}">
+                                <input name="mid" type="hidden" value="{$member.id}">
+                                <input name="pay[id]" type="hidden" value="{$vo.id}">
+                            </strong>
+                        </span>
+                    <volist name="payway" id="vo">
+
+                        <span>
+                            <strong>
+                                <em>收款方式</em>
+                                <select name="pay[payway]" id="paypay">
+                                    <option value="1" <eq name="vo.pay_type" value="1">selected</eq> >网银</option>
+                                    <option value="0" <eq name="vo.pay_type" value="0">selected</eq> >支付宝</option>
+                                </select>
+                            </strong>
+
+                                <div id="black01"  class="hide" <eq name="vo.pay_type" value="1">style="display:block;"</eq>>
+                                    <strong>
+                                        <em>银行名称</em>
+                                        <select name="pay[bank]">
+                                            <volist name="bank" id="bk">
+                                                <option value="{$key}" <eq name="vo.bank_type" value="$key">selected</eq>>{$bk}</option>
+                                            </volist>
+                                        </select>
+                                    </strong>
+                                    <strong>
+                                        <em>开户行</em>
+                                        <input name="pay[bank_name]" type="text" value='<eq name="vo.pay_type" value="1">{$vo.bank_name}</eq>' class="required">
+                                        <input name="pay[id]" type="hidden" value="{$vo.id}" >
+                                    </strong>
+                                    <strong>
+                                        <em>账号</em>
+                                        <input name="pay[pay_account]" type="text" value='<eq name="vo.pay_type" value="1">{$vo.pay_account}</eq>' class="required" maxlength="23" id="bankValue" onkeyup="banNumberOnKey()">
+                                    </strong>
+                                    <strong>
+                                        <em>收款人/公司名称</em>
+                                        <input name="pay[pay_getname]" type="text" value='<eq name="vo.pay_type" value="1">{$vo.pay_getname}</eq>' class="required">
+                                    </strong>
+                                </div>
+
+                                <div  id="black02" class="hide" <eq name="vo.pay_type" value="0">style="display:block;"</eq>>
+                                        <strong>
+                                            <em>支付宝账号</em>
+                                            <input name="pay[pay_account1]" type="text" value='<eq name="vo.pay_type" value="0">{$vo.pay_account}</eq>' class="required">
+                                            <input name="pay[id]" type="hidden" value="{$vo.id}" >
+                                        </strong>
+                                        <strong>
+                                            <em>收款人/公司名称</em>
+                                            <input name="pay[pay_getname1]" type="text" value='<eq name="vo.pay_type" value="0">{$vo.pay_getname}</eq>' class="required">
+                                        </strong>
+                                </div>
+
+                        </span>
+                    </volist>
+                    <div class="admin_bg_b2">
+                        <input type="submit" value="保存信息" name="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    var bank=/^(\d{4}(?:\s\d{4}){3})|(\d{4}(?:\s\d{4}){3}\d{3})$/;
+
+    $(function () {
+        $('#paypay').change(function (e) {
+            if($(this).val()==1){
+                $('#black01').show();
+                $('#black02').hide();
+            }
+            if($(this).val()==0){
+                $('#black01').hide();
+                $('#black02').show();
+            }
+        });
+
+        $('form').validate();
+        $('form').on('submit',function (e) {
+            $flag = bank.test($('#bankValue').val());
+            e.preventDefault();
+            if(!$flag && $('#paypay').val()==1){
+                layer.alert('请填写正确的银行卡号');
+                return '';
+            }
+            if($('form').valid()){
+                $('form').ajaxSubmit({
+                    success:function(data){
+                        if(data.status=1){
+                            redirect('__URL__/see?mid={$Think.get.mid}',data.msg,2);
+                        }else{
+                            layer.msg(data.msg, {icon: 1});
+                        }
+                    }
+                });
+            }
+        });
+
+
+    });
+    function banNumberOnKey() {
+        document.getElementById("bankValue").onkeyup =function() {
+            this.value =this.value.replace(/\s/g,'').replace(/(\d{4})(?=\d)/g,"$1 ");
+        };
+    }
+</script>
+<include file="Common:footer"/>

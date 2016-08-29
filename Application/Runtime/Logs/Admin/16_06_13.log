@@ -1,0 +1,2197 @@
+[ 2016-06-13T09:31:44+08:00 ] 117.81.85.119 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-06-13T09:31:46+08:00 ] 117.81.85.119 /Admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_admin` WHERE `username` = '二少' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 37 行.
+SQL: UPDATE `think_admin` SET `last_date`='1465781506',`last_ip`='117.81.85.119' WHERE `id` = 6 [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: logintime /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 58 行.
+NOTIC: [8] Undefined index: loginip /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 59 行.
+
+[ 2016-06-13T09:31:46+08:00 ] 117.81.85.119 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc,id desc LIMIT 0,1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_column` WHERE ( fid=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-13T09:31:46+08:00 ] 117.81.85.119 /Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::_details() should be compatible with Admin\Controller\BaseController::_details($attr) /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 601 行.
+NOTIC: [8] Undefined index: package /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 629 行.
+NOTIC: [8] Undefined index: pname /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 630 行.
+NOTIC: [8] Undefined variable: map /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_member` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_member` WHERE `status` = 0 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `think_producted` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 7 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 6 AND `status` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 5 AND `status` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 2 AND `status` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 1 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-06-13T09:31:49+08:00 ] 117.81.85.119 /Admin/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_admin` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_admin` WHERE `id` = 6 LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+SQL: SELECT * FROM `think_model` WHERE `id` IN ('1','2','3','4','5','6')  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `id` IN ('1','2','3','4','5','6')  [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000117s ]
+
+[ 2016-06-13T09:31:49+08:00 ] 101.226.33.203 /admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+
+[ 2016-06-13T09:31:49+08:00 ] 101.226.33.203 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000259s ]
+
+[ 2016-06-13T09:31:49+08:00 ] 101.226.227.94 /admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+
+[ 2016-06-13T09:31:50+08:00 ] 101.226.227.94 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000249s ]
+
+[ 2016-06-13T09:31:52+08:00 ] 117.81.85.119 /Admin/Flink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_flink` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_flink` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_flink` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000157s ]
+
+[ 2016-06-13T09:31:52+08:00 ] 101.226.227.97 /admin/flink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+
+[ 2016-06-13T09:31:52+08:00 ] 101.226.227.97 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000175s ]
+
+[ 2016-06-13T09:31:54+08:00 ] 180.153.206.16 /admin/flink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+
+[ 2016-06-13T09:31:55+08:00 ] 117.81.85.119 /Admin/Balance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BalanceController.class.php 第 183 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BalanceController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `think_packdata` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_packdata` WHERE `total` <> 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_packdata` WHERE `total` <> 0 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_member` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_producted` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000190s ]
+
+[ 2016-06-13T09:32:17+08:00 ] 180.153.163.191 /admin/flink
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+
+[ 2016-06-13T09:32:18+08:00 ] 180.153.163.191 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2016-06-13T13:59:41+08:00 ] 114.218.21.70 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2016-06-13T13:59:43+08:00 ] 114.218.21.70 /Admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_admin` WHERE `username` = '二少' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 37 行.
+SQL: UPDATE `think_admin` SET `last_date`='1465797583',`last_ip`='114.218.21.70' WHERE `id` = 6 [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: logintime /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 58 行.
+NOTIC: [8] Undefined index: loginip /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 59 行.
+
+[ 2016-06-13T13:59:43+08:00 ] 114.218.21.70 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc,id desc LIMIT 0,1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_column` WHERE ( fid=0 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-06-13T13:59:43+08:00 ] 114.218.21.70 /Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::_details() should be compatible with Admin\Controller\BaseController::_details($attr) /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 601 行.
+NOTIC: [8] Undefined index: package /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 629 行.
+NOTIC: [8] Undefined index: pname /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 630 行.
+NOTIC: [8] Undefined variable: map /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_member` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_member` WHERE `status` = 0 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `think_producted` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 7 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 6 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 5 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 2 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 1 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-06-13T14:02:51+08:00 ] 114.218.21.70 /Admin/Product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000191s ]
+
+[ 2016-06-13T14:28:21+08:00 ] 114.218.21.70 /Admin/Product/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000428s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000492s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000178s ]
+
+[ 2016-06-13T14:28:24+08:00 ] 114.218.21.70 /Admin/Product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-06-13T14:28:27+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 95 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 97 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 98 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 100 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 101 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 102 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 104 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 108 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 110 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 111 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 113 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 114 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 115 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 117 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 134 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 136 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 137 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 139 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 140 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 141 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000202s ]
+
+[ 2016-06-13T14:36:38+08:00 ] 114.218.21.70 /Admin/Product/edithd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: UPDATE `think_product` SET `title`='海马手机助手',`content`='&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;color:#333333;line-height:1.5;&quot;&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:left;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;推广要求：&lt;/span&gt;&lt;span style=&quot;line-height:1.5;color:#E53333;font-size:18px;&quot;&gt;&lt;strong&gt;次留25% &amp;nbsp; 周留15% &amp;nbsp; 真实量 &amp;nbsp;有用户行为！！&lt;/strong&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;line-height:1.5;font-size:14px;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;line-height:1.5;font-size:14px;&quot;&gt;行云流水般的用户体验&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;海马助手是一款无需越狱，无需Apple ID，免费下载安装海量正版资源应用。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;海马助手有着非常优秀的界面体验设计，利用手势操作，栏目布局一目了然。照顾国内用户对资源查找下载安装等习惯，给人不杂不乱的感觉！加之优秀的UI设计，让您体验行云流水般地操作。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;海量资源轻松下载&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;海马助手囊括30万数量的软件、游戏等资源，分门别类、更新迅速，让您随时随地High起来！丰富的软件游戏，铃声，壁纸资源，一键安装，无需多余操作，飞速下载，自动安装，且支持苹果下载过程中不待机掉线，支持后台下载。在你点击需要安装的软件之后，可安home键，做其他的事，海马助手自动帮你下载，待下载完后会提示是否安装。同时像铃声壁纸轻松设置，解决用户设置铃声的不便！&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;飞速下载 风驰电掣&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;海马助手具有覆盖电信、联通、移动三大互联网商的高速网络，让您的下载如风驰电掣！&lt;/span&gt;&lt;br /&gt;
+	&lt;div style=&quot;text-align:center;&quot;&gt;
+		&lt;span style=&quot;font-size:14px;line-height:1.5;&quot;&gt;&lt;/span&gt;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613143526_61027.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;',`image`='/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613142859_78506.png',`type`='2',`attr`='CPA',`price`='CPA_3.8',`sh_price`='CPA_4.2',`com`='CPA_1',`balance_time`='CPA_3',`service`='1',`sort`='6',`status`='0',`revise_time`='1465799798' WHERE `id` = 2 [ RunTime:0.0011s ]
+
+[ 2016-06-13T14:36:41+08:00 ] 114.218.21.70 /Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000159s ]
+
+[ 2016-06-13T14:38:05+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000470s ]
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 121 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 123 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 124 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 126 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 127 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 128 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 130 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 134 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 136 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 137 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 139 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 140 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 141 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000253s ]
+
+[ 2016-06-13T14:50:40+08:00 ] 114.218.21.70 /Admin/Product/edithd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: UPDATE `think_product` SET `title`='酷我音乐',`content`='&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;推广要求：&lt;strong&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;真实量 &amp;nbsp;不刷量&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;
+	&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+		&lt;span style=&quot;font-size:14px;&quot;&gt;酷我音乐是中国数字音乐的交互服务品牌，是互联网领域的数字音乐服务平台，同时也是一款内容全、聆听快和界面炫的音乐聚合播放器，是国内的多种音乐资源聚合的播放软件。&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+		&lt;span style=&quot;font-size:14px;&quot;&gt;自平台成立以来，酷我音乐作为前端潮流音乐的重要推手，率先与唱片公司、版权管理机构合作探索发展，免费向广大用户提供方便流畅的在线音乐，还有免费无损音乐方便用户的试听和下载，生成了丰富的音乐流媒体生态系统。&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+		&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;酷我是由前百度首席架构师雷鸣先生在2005年8月创立的。雷鸣是百度创始七剑客之一，首席架构师。他是百度搜索引擎的早期设计者和技术负责人之一。雷鸣现任酷我音乐董事长和CEO。他获得北京大学计算机科学硕士学位&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;和斯坦福大学商学院MBA学位，曾任北京大学计算机系学生会主席和斯坦福大学中国学生学者联合会副主席。雷鸣是国家千人计划特聘专家，北京市海聚工程特聘专家&lt;/span&gt;&lt;/span&gt;
+	&lt;/div&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;
+	&lt;div style=&quot;text-align:center;&quot;&gt;
+		&lt;span style=&quot;line-height:1.5;&quot;&gt;&lt;/span&gt;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613145012_77346.jpg&quot; alt=&quot;&quot; /&gt;
+	&lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;',`image`='/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613144852_32869.jpg',`type`='1',`attr`='CPA',`price`='CPA_0.3',`sh_price`='CPA_0.3',`com`='CPA_1',`balance_time`='CPA_3',`service`='1',`sort`='10',`status`='0',`revise_time`='1465800640' WHERE `id` = 5 [ RunTime:0.0014s ]
+
+[ 2016-06-13T14:50:43+08:00 ] 114.218.21.70 /Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000169s ]
+
+[ 2016-06-13T14:51:40+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000509s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000596s ]
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 82 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 84 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 85 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 87 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 88 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 89 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 91 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 95 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 97 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 98 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 100 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 101 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 102 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 104 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 108 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 110 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 111 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 113 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 114 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 115 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 117 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 121 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 123 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 124 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 126 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 127 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 128 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000283s ]
+
+[ 2016-06-13T14:51:55+08:00 ] 114.218.21.70 /Admin/Product/edithd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0014s ]
+SQL: UPDATE `think_product` SET `title`='360导航',`content`='&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt; &lt;/span&gt; 
+&lt;/p&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;360导航是新一代安全上网导航，为用户提供门户、新闻、视频、游戏、小说、彩票等各种分类的优秀内容和网站入口，提供最简单便捷的上网导航服务。安全上网，从360导航开始。[1]&lt;/span&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;360安全网址的宗旨是方便网友们快速找到自已需要的网站，而不用去记太多复杂的网址，我的导航能让网友快速收藏喜爱的网站；同时提供多种搜索引擎入口、实用工具、快速充值、&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://baike.baidu.com/subview/38359/11134158.htm&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;天气预报&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;、&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://baike.baidu.com/view/4367726.htm&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;团购导航&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;、地方&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://baike.baidu.com/view/425408.htm&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;导航&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;等特色服务。&lt;/span&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;para&quot; style=&quot;text-align:center;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;我们打破了传统网址导航站十几年来一成不变的沉闷局面，首创了“网址+APP聚合”的模式，树立了新一代导航网站的行业标准。我们引领的&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://baike.baidu.com/subview/132427/8069631.htm&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;APP&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;化、个性化、地域化、工具化等特点已经成为业内其他网址站的效仿对象，引领了行业潮流。作为业内最善于创新的网站，360安全网址研发推出了大量新功能。&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/attached/image/20160612/20160612130357_92055.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; 
+&lt;/div&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt; 
+&lt;/p&gt;',`image`='/Public/Plug/kindeditor-4.1.10/attached/image/20160612/20160612133010_81975.png',`type`='1',`attr`='meiti',`price`='meiti_0.092',`sh_price`='meiti_0.096',`com`='meiti_1',`balance_time`='meiti_3',`service`='1',`sort`='7',`status`='0',`revise_time`='1465800715' WHERE `id` = 7 [ RunTime:0.0011s ]
+
+[ 2016-06-13T14:51:59+08:00 ] 114.218.21.70 /Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-06-13T15:04:45+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 121 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 123 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 124 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 126 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 127 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 128 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 130 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 134 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 136 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 137 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 139 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 140 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 141 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000138s ]
+
+[ 2016-06-13T15:20:01+08:00 ] 114.218.21.70 /Admin/Product/edithd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: UPDATE `think_product` SET `title`='搜狐视频',`content`='&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;搜狐视频是知名的网络长视频播放平台，国内第一家提供提供正版、高清、原创视频的门户网站。搜狐视频是\'搜狐视频\'推出的手机客户端软件，涵盖电影、电视剧、动漫、综艺、纪录片、原创等精彩视频。搜狐视频界面时尚、速度流畅、操作简单，支持高清视频、离线下载，为广大用户提供一站式视频播放解决方案。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;功能&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;1、每日推荐最新电视剧、电影等&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;2、热播排行榜&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;3、详细分类查找功能&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;4、快速搜索、语音搜索&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;5、收藏功能&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;6、评论功能&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;7、视频下载（预加载）功能，支持边加载边看&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;&quot;&gt;8、播放记录功能&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/php/../attached/image/20160613/20160613151922_41427.jpg&quot; alt=&quot;&quot; /&gt;&amp;nbsp; &amp;nbsp;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/php/../attached/image/20160613/20160613151922_31400.jpg&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/php/../attached/image/20160613/20160613151923_91759.jpg&quot; alt=&quot;&quot; /&gt;&amp;nbsp; &amp;nbsp;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/php/../attached/image/20160613/20160613151923_40615.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;',`image`='/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613150514_71845.jpg',`type`='2',`attr`='CPA',`price`='CPA_1.2',`sh_price`='CPA_1.5',`com`='CPA_1',`balance_time`='CPA_3',`service`='1',`sort`='100',`status`='0',`revise_time`='1465802401' WHERE `id` = 3 [ RunTime:0.0008s ]
+
+[ 2016-06-13T15:20:04+08:00 ] 114.218.21.70 /Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000177s ]
+
+[ 2016-06-13T15:33:20+08:00 ] 114.218.21.70 /Admin/Balance
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BalanceController.class.php 第 183 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BalanceController.class.php 第 183 行.
+SQL: SHOW COLUMNS FROM `think_packdata` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_packdata` WHERE `total` <> 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_packdata` WHERE `total` <> 0 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `think_member` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_producted` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-06-13T15:33:24+08:00 ] 114.218.21.70 /Admin/Balance/check?id=5&mid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 and id in(1,2,3,4,5,6) )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_packdata` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `think_packdata` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `think_member` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_payway` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_payway` WHERE `mid` = 5 AND `pay_default` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_packdata` WHERE time < 1464883200 AND checked!="-" AND mid=5 AND pid=1 ORDER BY time asc LIMIT 1 [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_packdata` WHERE time < 1464883200 AND checked="-" AND mid=5 AND pid=1 ORDER BY time asc LIMIT 1 [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_packdata` WHERE ( time>=1 and time <=1464883200  AND pid=1 and mid=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_packdata` WHERE ( time>=1 and time <=1464883200  AND pid=1 and mid=5 ) ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+SQL: SELECT * FROM `think_member` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_producted` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_producted` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: des /home/cpa88_cs/Application/Runtime/Cache/Admin/374d7d024c5873c21d992bf32ce467e7.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000129s ]
+
+[ 2016-06-13T17:00:51+08:00 ] 114.218.21.70 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-06-13T17:00:51+08:00 ] 114.218.21.70 /Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000183s ]
+
+[ 2016-06-13T17:00:59+08:00 ] 114.218.21.70 /Admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `think_admin` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `think_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 37 行.
+SQL: UPDATE `think_admin` SET `last_date`='1465808459',`last_ip`='114.218.21.70' WHERE `id` = 1 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: logintime /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 58 行.
+NOTIC: [8] Undefined index: loginip /home/cpa88_cs/Application/Admin/Controller/PublicController.class.php 第 59 行.
+
+[ 2016-06-13T17:00:59+08:00 ] 114.218.21.70 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_article` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_article` ORDER BY create_time desc,id desc LIMIT 0,1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_column` WHERE ( fid=0 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-06-13T17:00:59+08:00 ] 114.218.21.70 /Admin/Member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2048] Declaration of Admin\Controller\MemberController::_details() should be compatible with Admin\Controller\BaseController::_details($attr) /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 601 行.
+NOTIC: [8] Undefined index: package /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 629 行.
+NOTIC: [8] Undefined index: pname /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 630 行.
+NOTIC: [8] Undefined variable: map /home/cpa88_cs/Application/Admin/Controller/MemberController.class.php 第 632 行.
+SQL: SHOW COLUMNS FROM `think_member` [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_member` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_member` WHERE `status` = 0 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `think_producted` [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 7 AND `status` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 6 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 5 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 2 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_producted` WHERE `mid` = 1 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000161s ]
+
+[ 2016-06-13T17:01:11+08:00 ] 114.218.21.70 /Admin/Product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000224s ]
+
+[ 2016-06-13T17:01:14+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 82 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 84 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 85 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 87 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 88 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 89 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 91 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 95 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 97 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 98 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 100 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 101 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 102 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 104 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 108 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 110 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 111 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 113 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 114 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 115 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 117 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 121 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 123 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 124 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 126 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 127 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 128 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000196s ]
+
+[ 2016-06-13T17:01:27+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 82 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 84 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 85 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 87 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 88 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 89 行.
+NOTIC: [8] Undefined index: CPA /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 91 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 95 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 97 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 98 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 100 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 101 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 102 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 104 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 108 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 110 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 111 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 113 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 114 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 115 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 117 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 121 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 123 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 124 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 126 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 127 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 128 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000170s ]
+
+[ 2016-06-13T17:02:23+08:00 ] 114.218.21.70 /Admin/Product/edithd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0008s ]
+SQL: UPDATE `think_product` SET `title`='360导航',`content`='&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;color:#333333;line-height:2;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 360导航是新一代安全上网导航，为用户提供门户、新闻、视频、游戏、小说、彩票等各种分类的优秀内容和网站入口，提供最简单便捷的上网导航服务。安全上网，从360导航开始。[1]&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;color:#333333;line-height:2;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 360安全网址的宗旨是方便网友们快速找到自已需要的网站，而不用去记太多复杂的网址，我的导航能让网友快速收藏喜爱的网站；同时提供多种搜索引擎入口、实用工具、快速充值、天气预报、团购导航、地方导航等特色服务。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;color:#333333;line-height:2;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 我们打破了传统网址导航站十几年来一成不变的沉闷局面，首创了“网址+APP聚合”的模式，树立了新一代导航网站的行业标准。我们引领的APP化、个性化、地域化、工具化等特点已经成为业内其他网址站的效仿对象，引领了行业潮流。作为业内最善于创新的网站，360安全网址研发推出了大量新功能。&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;color:#333333;line-height:2;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/attached/image/20160612/20160612130357_92055.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;br /&gt;
+&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt; 
+&lt;/p&gt;',`image`='/Public/Plug/kindeditor-4.1.10/attached/image/20160612/20160612133010_81975.png',`type`='1',`attr`='meiti',`price`='meiti_0.092',`sh_price`='meiti_0.096',`com`='meiti_1',`balance_time`='meiti_1',`service`='1',`sort`='7',`status`='0',`revise_time`='1465808543' WHERE `id` = 7 [ RunTime:0.0006s ]
+
+[ 2016-06-13T17:02:26+08:00 ] 114.218.21.70 /Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000209s ]
+
+[ 2016-06-13T17:02:53+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000434s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 95 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 97 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 98 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 100 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 101 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 102 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 104 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 108 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 110 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 111 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 113 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 114 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 115 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 117 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 121 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 123 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 124 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 126 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 127 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 128 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 130 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 134 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 136 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 137 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 139 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 140 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 141 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-06-13T17:03:09+08:00 ] 114.218.21.70 /Admin/Product/edithd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0018s ]
+SQL: UPDATE `think_product` SET `title`='酷我音乐',`content`='&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;推广要求：&lt;strong&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;真实量 &amp;nbsp;不刷量&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt; &lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;酷我音乐是中国数字音乐的交互服务品牌，是互联网领域的数字音乐服务平台，同时也是一款内容全、聆听快和界面炫的音乐聚合播放器，是国内的多种音乐资源聚合的播放软件。&lt;/span&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;自平台成立以来，酷我音乐作为前端潮流音乐的重要推手，率先与唱片公司、版权管理机构合作探索发展，免费向广大用户提供方便流畅的在线音乐，还有免费无损音乐方便用户的试听和下载，生成了丰富的音乐流媒体生态系统。&lt;/span&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;p&gt;
+		&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;酷我是由前百度首席架构师雷鸣先生在2005年8月创立的。雷鸣是百度创始七剑客之一，首席架构师。他是百度搜索引擎的早期设计者和技术负责人之一。雷鸣现任酷我音乐董事长和CEO。他获得北京大学计算机科学硕士学位&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;和斯坦福大学商学院MBA学位，曾任北京大学计算机系学生会主席和斯坦福大学中国学生学者联合会副主席。雷鸣是国家千人计划特聘专家，北京市海聚工程特聘专家&lt;/span&gt;&lt;/span&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/span&gt; 
+	&lt;/p&gt;
+&lt;/div&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt; 
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;&quot;&gt;&lt;/span&gt;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613145012_77346.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/div&gt;
+&lt;/span&gt; 
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;',`image`='/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613144852_32869.jpg',`type`='1',`attr`='CPA',`price`='CPA_0.3',`sh_price`='CPA_0.3',`com`='CPA_1',`balance_time`='CPA_3',`service`='1',`sort`='10',`status`='0',`revise_time`='1465808589' WHERE `id` = 5 [ RunTime:0.0011s ]
+
+[ 2016-06-13T17:03:12+08:00 ] 114.218.21.70 /Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000129s ]
+
+[ 2016-06-13T17:03:25+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 95 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 97 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 98 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 100 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 101 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 102 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 104 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 108 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 110 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 111 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 113 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 114 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 115 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 117 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 121 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 123 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 124 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 126 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 127 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 128 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 130 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 134 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 136 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 137 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 139 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 140 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 141 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000163s ]
+
+[ 2016-06-13T17:03:29+08:00 ] 114.218.21.70 /Admin/Product/edithd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: UPDATE `think_product` SET `title`='酷我音乐',`content`='&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;推广要求：&lt;strong&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;真实量 &amp;nbsp;不刷量&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt; &lt;/span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;酷我音乐是中国数字音乐的交互服务品牌，是互联网领域的数字音乐服务平台，同时也是一款内容全、聆听快和界面炫的音乐聚合播放器，是国内的多种音乐资源聚合的播放软件。&lt;/span&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;自平台成立以来，酷我音乐作为前端潮流音乐的重要推手，率先与唱片公司、版权管理机构合作探索发展，免费向广大用户提供方便流畅的在线音乐，还有免费无损音乐方便用户的试听和下载，生成了丰富的音乐流媒体生态系统。&lt;/span&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;p&gt;
+		&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;酷我是由前百度首席架构师雷鸣先生在2005年8月创立的。雷鸣是百度创始七剑客之一，首席架构师。他是百度搜索引擎的早期设计者和技术负责人之一。雷鸣现任酷我音乐董事长和CEO。他获得北京大学计算机科学硕士学位&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;和斯坦福大学商学院MBA学位，曾任北京大学计算机系学生会主席和斯坦福大学中国学生学者联合会副主席。雷鸣是国家千人计划特聘专家，北京市海聚工程特聘专家&lt;/span&gt;&lt;/span&gt; 
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/span&gt; 
+	&lt;/p&gt;
+&lt;/div&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt; 
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;&quot;&gt;&lt;/span&gt;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613145012_77346.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/div&gt;
+&lt;/span&gt; 
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;',`image`='/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613144852_32869.jpg',`type`='1',`attr`='CPA',`price`='CPA_0.3',`sh_price`='CPA_0.3',`com`='CPA_1',`balance_time`='CPA_3',`service`='1',`sort`='10',`status`='0',`revise_time`='1465808609' WHERE `id` = 5 [ RunTime:0.0007s ]
+
+[ 2016-06-13T17:03:32+08:00 ] 114.218.21.70 /Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000217s ]
+
+[ 2016-06-13T17:03:58+08:00 ] 114.218.21.70 /Admin/Product/edit?pid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_product` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `think_kefu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_kefu` WHERE ( status=0 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 95 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 97 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 98 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 100 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 101 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 102 行.
+NOTIC: [8] Undefined index: CPS /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 104 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 108 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 110 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 111 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 113 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 114 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 115 行.
+NOTIC: [8] Undefined index: CPC /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 117 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 121 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 123 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 124 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 126 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 127 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 128 行.
+NOTIC: [8] Undefined index: CPM /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 130 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 134 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 136 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 137 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 139 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 140 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 141 行.
+NOTIC: [8] Undefined index: meiti /home/cpa88_cs/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000184s ]
+
+[ 2016-06-13T17:04:08+08:00 ] 114.218.21.70 /Admin/Product/edithd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: t /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 541 行.
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/ProductController.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0010s ]
+SQL: UPDATE `think_product` SET `title`='酷我音乐',`content`='&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;推广要求：&lt;strong&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;真实量 &amp;nbsp;不刷量&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;color:#E53333;font-size:18px;&quot;&gt; &lt;/span&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;酷我音乐是中国数字音乐的交互服务品牌，是互联网领域的数字音乐服务平台，同时也是一款内容全、聆听快和界面炫的音乐聚合播放器，是国内的多种音乐资源聚合的播放软件。&lt;/span&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;自平台成立以来，酷我音乐作为前端潮流音乐的重要推手，率先与唱片公司、版权管理机构合作探索发展，免费向广大用户提供方便流畅的在线音乐，还有免费无损音乐方便用户的试听和下载，生成了丰富的音乐流媒体生态系统。&lt;/span&gt; 
+&lt;/div&gt;
+&lt;div class=&quot;para&quot; style=&quot;font-size:14px;color:#333333;font-family:arial, 宋体, sans-serif;background-color:#FFFFFF;&quot;&gt;
+	&lt;p&gt;
+		&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;酷我是由前百度首席架构师雷鸣先生在2005年8月创立的。雷鸣是百度创始七剑客之一，首席架构师。他是百度搜索引擎的早期设计者和技术负责人之一。雷鸣现任酷我音乐董事长和CEO。他获得北京大学计算机科学硕士学位&lt;/span&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;和斯坦福大学商学院MBA学位，曾任北京大学计算机系学生会主席和斯坦福大学中国学生学者联合会副主席。雷鸣是国家千人计划特聘专家，北京市海聚工程特聘专家&lt;/span&gt;&lt;/span&gt; 
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;span style=&quot;font-size:14px;line-height:2;color:#333333;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;/span&gt; 
+	&lt;/p&gt;
+&lt;/div&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt; 
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;&quot;&gt;&lt;/span&gt;&lt;img src=&quot;/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613145012_77346.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/div&gt;
+&lt;/span&gt; 
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;',`image`='/Public/Plug/kindeditor-4.1.10/attached/image/20160613/20160613144852_32869.jpg',`type`='1',`attr`='CPA',`price`='CPA_0.3',`sh_price`='CPA_0.3',`com`='CPA_1',`balance_time`='CPA_3',`service`='1',`sort`='10',`status`='0',`revise_time`='1465808648' WHERE `id` = 5 [ RunTime:0.0005s ]
+
+[ 2016-06-13T17:04:11+08:00 ] 114.218.21.70 /Admin/Product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000246s ]
+
+[ 2016-06-13T17:15:47+08:00 ] 114.218.21.70 /Admin/Product/index/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002552s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 10,10   [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000987s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001782s ]
+
+[ 2016-06-13T17:15:49+08:00 ] 114.218.21.70 /Admin/Product/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000118s ]
+
+[ 2016-06-13T17:15:50+08:00 ] 114.218.21.70 /Admin/Product/index/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `think_model` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `think_model` WHERE ( fid=0 and "show"=0 and status=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 1 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 2 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 3 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 4 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 5 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 6 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 7 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_model` WHERE `fid` = 8 AND `status` = 0 AND `show` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /home/cpa88_cs/Application/Admin/Controller/BaseController.class.php 第 260 行.
+SQL: SHOW COLUMNS FROM `think_product` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `think_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `think_product` ORDER BY sort asc,status asc LIMIT 10,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `think_column` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `think_column` WHERE ( fid=0 and id!=3 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000158s ]
+

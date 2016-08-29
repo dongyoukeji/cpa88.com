@@ -1,0 +1,261 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a>ID:xone</a>
+            <a href="__URL__/see?mid={$Think.get.mid}" >基本信息</a>
+            <a href="__URL__/plist?mid={$Think.get.mid}" >产品列表</a>
+            <a href="__URL__/add?mid={$Think.get.mid}" id="admin_bg_t_x">添加产品</a>
+            <span class="admin_yhgl_top">
+                <a href="__URL__/plist">返回包列表</a>
+            </span>
+        </div>
+        <form action="__URL__/paddhd" method="post" enctype="multipart/form-data">
+            <div class="admin_bg_fb">
+                    <span>
+                    	<em>产品类型</em>
+                        <select name="type" id="change-type">
+                            <volist name="col" id="vo">
+                                <option value="{$vo.id}">{$vo.title}</option>
+                            </volist>
+                        </select>
+                    </span>
+                    <span>
+                    	<em>产品名称</em>
+                        <select name="ptype" id="plist">
+                            <volist name="pro" id="vo1">
+                                <option value="{$vo1.id}">{$vo1.title}</option>
+                            </volist>
+                        </select>
+                        <input name="mid" type="hidden" value="{$Think.get.mid}">
+                    </span>
+                    <span>
+                    	<em>详细</em>
+                        <div class="admin_tgxz">
+                            <volist name="tpro.pro_attr" id="vo" key="k">
+                                <div class="admin_tgxz_n">
+                                    <input name="pro_attr[{$k}][t]" type="checkbox" value="{$vo.t}" onchange="change(this,0)">
+                                    <i><eq name="vo.t" value="meiti">富媒体<else />{$vo.t}</eq> </i>
+                                    <input class="admin_tgxz_j" name="pro_attr[{$k}][sh_price]" type="text" placeholder="上家价格" value="{$vo.sh_price}" onchange="change(this,1)">
+                                    <input class="admin_tgxz_j" name="pro_attr[{$k}][price]" type="text" placeholder="用户价格" value="{$vo.price}" onchange="change(this,1)">
+                                    <select name="pro_attr[{$k}][type]">
+                                        <option value="1"  <eq name="vo.type" value="1">selected</eq> >日结</option>
+                                        <option value="2" <eq name="vo.type" value="2">selected</eq>>周结</option>
+                                        <option value="3" <eq name="vo.type" value="3">selected</eq>>月结</option>
+                                    </select>
+                                    <a class="add-package" data-role="{$k}" data-index="1" onclick="javascript:create_package('{$vo.t}',{$k},this)">添加包</a>
+                                    <div class="admin_tg_btj">
+                                        <input name="pro_attr[{$k}][0][pack][pack]" type="text" placeholder="包名"  class="package-name" onblur="check_package(this)" onchange="change(this,0)">
+                                        <input id="admin_btj_1" name="pro_attr[{$k}][0][pack][link]" type="text" placeholder="推广链接" class="" onchange="change(this,0)">
+                                        <input name="pro_attr[{$k}][0][pack_{$vo.t}][file]" type="file">
+                                    </div>
+                                </div>
+                            </volist>
+                        </div>
+                    </span>
+                    <span>
+                    	<em>备注</em>
+                        <textarea name="desc" cols="" rows="" placeholder="备注信息填写"></textarea>
+                    </span>
+                <div class="admin_bg_b2 admin_bg_b3">
+                    <input name="" type="submit" value="确认添加">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $flag = true;
+    $(function () {
+        $('input[type="checkbox"]').bind('click',function (e) {
+            $('.error').remove();
+        });
+        $('form').submit(function (e) {
+            $('input[type="checkbox"]').each(function (index) {
+                 if($(this).is(':checked')){
+                     $parent = $(this).parent('.admin_tgxz_n');
+                     $input = $parent.find('input[type="text"]');
+                     $input.each(function (index) {
+                         if($(this).val()==''){
+                             $(this).css('border','1px solid red');
+                             $flag = false;
+                         }else {
+                             $(this).removeAttr('style');
+                         }
+                     });
+                 }
+            });
+            if($('input[type="checkbox"]').is(':checked')==false){
+                if(!$('.admin_tgxz').siblings('div').hasClass('error')){
+                    $('.admin_tgxz').after('<div style="color:red;clear: both; margin-left:75px;" class="error">至少需要勾填一项</div>');
+                }
+                $flag = false;
+            }
+            return $flag;
+        });
+
+        $('#change-type').change(function (e) {
+            $.post('__URL__/changes',{id:$(this).val()},function (data) {
+                if(data.status==1){
+                    var plist  = data.plist;
+                    var first  = data.first.pro_attr;
+                    $html="";
+                    $html1="";
+                    for(var i=0;i<plist.length;i++){
+                        $html +="<option value='"+plist[i]['id']+"'>"+plist[i]['title']+"</option>";
+                    }
+                    for (var j=0;j< first.length;j++){
+
+                       $html1+='<div class="admin_tgxz_n">';
+                       $html1+='  <input name="pro_attr['+j+'][t]" type="checkbox" value="'+first[j]['t']+'" >';
+                        if(first[j]['t']=='meiti'){
+                            $html1+='   <i>富媒体 </i>';
+                        }else{
+                            $html1+='   <i>'+first[j]['t']+'</i>';
+                        }
+                        if(first[j]['sh_price']!=null){
+                            $html1+='   <input class="admin_tgxz_j" name="pro_attr['+j+'][sh_price]" type="text" placeholder="上家价格" value="'+first[j]['sh_price']+'" onchange="change(this,1)">';
+                        }else{
+                            $html1+='   <input class="admin_tgxz_j" name="pro_attr['+j+'][sh_price]" type="text" placeholder="上家价格" value="" onchange="change(this,1)">';
+                        }
+                       $html1+='   <input class="admin_tgxz_j" name="pro_attr['+j+'][price]" type="text" placeholder="价格" value="'+first[j]['price']+'" onchange="change(this,0)">';
+
+
+                       $html1+='   <select name="pro_attr['+j+'][type]">';
+                        if(first[j]['type']==1){
+                            $html1+='        <option value="1" selected>日结</option>';
+                            $html1+='        <option value="2">周结</option>';
+                            $html1+='        <option value="3" >月结</option>';
+                        }else if(first[j]['type']==2){
+                            $html1+='        <option value="1" >日结</option>';
+                            $html1+='        <option value="2" selected>周结</option>';
+                            $html1+='        <option value="3" >月结</option>';
+                        }else{
+                            $html1+='        <option value="1">日结</option>';
+                            $html1+='        <option value="2">周结</option>';
+                            $html1+='        <option value="3" selected>月结</option>';
+                        }
+
+                       $html1+='   </select>';
+                       $html1+='        <a class="add-package" data-role="'+j+'" data-index="1" onclick="javascript:create_package(\''+first[j]['t']+'\','+j+',this)">添加包</a>';
+                       $html1+='        <div class="admin_tg_btj">';
+                       $html1+='        <input name="pro_attr['+j+'][0][pack][pack]" type="text" placeholder="包名" onblur="check_package(this)" onchange="change(this,0)">';
+                       $html1+='        <input id="admin_btj_1" name="pro_attr['+j+'][0][pack][link]" type="text" placeholder="推广链接" class="" onchange="change(this,0)">';
+                       $html1+='        <input name="pro_attr['+j+'][0][pack_'+first[j]['t']+'][file]" type="file">';
+                       $html1+='        </div>';
+                       $html1+='       </div>';
+
+                    }
+                    $('#plist').empty().html($html);
+                    $('.admin_tgxz').empty().html($html1);
+                }
+            });
+        });
+
+        $('#plist').change(function () {
+            $.post('__URL__/change_pro',{id:$(this).val()},function (data) {
+                var first  = data.first.pro_attr;
+                if(data.status==1){
+                    var first  = data.first.pro_attr;
+                    $html1="";
+
+                    for (var j=0;j< first.length;j++){
+
+                        $html1+='<div class="admin_tgxz_n">';
+                        $html1+='  <input name="pro_attr['+j+'][t]" type="checkbox" value="'+first[j]['t']+'">';
+                        if(first[j]['t']=='meiti'){
+                            $html1+='   <i>富媒体 </i>';
+                        }else{
+                            $html1+='   <i>'+first[j]['t']+'</i>';
+                        }
+                        if(first[j]['sh_price']!=null){
+                            $html1+='   <input class="admin_tgxz_j" name="pro_attr['+j+'][sh_price]" type="text" placeholder="上家价格" value="'+first[j]['sh_price']+'" onchange="change(this,1)">';
+                        }else{
+                            $html1+='   <input class="admin_tgxz_j" name="pro_attr['+j+'][sh_price]" type="text" placeholder="上家价格" value="" onchange="change(this,1)">';
+                        }
+                        $html1+='   <input class="admin_tgxz_j" name="pro_attr['+j+'][price]" type="text" placeholder="用户价格" value="'+first[j]['price']+'" onchange="change(this,0)">';
+
+
+                        $html1+='   <select name="pro_attr['+j+'][type]">';
+                        if(first[j]['type']==1){
+                            $html1+='        <option value="1" selected>日结</option>';
+                            $html1+='        <option value="2">周结</option>';
+                            $html1+='        <option value="3" >月结</option>';
+                        }else if(first[j]['type']==2){
+                            $html1+='        <option value="1" >日结</option>';
+                            $html1+='        <option value="2" selected>周结</option>';
+                            $html1+='        <option value="3" >月结</option>';
+                        }else{
+                            $html1+='        <option value="1">日结</option>';
+                            $html1+='        <option value="2">周结</option>';
+                            $html1+='        <option value="3" selected>月结</option>';
+                        }
+                        $html1+='   </select>';
+                        $html1+='        <a class="add-package" data-role="'+j+'" data-index="1" onclick="javascript:create_package(\''+first[j]['t']+'\','+j+',this)">添加包</a>';
+                        $html1+='        <div class="admin_tg_btj">';
+                        $html1+='        <input name="pro_attr['+j+'][0][pack][pack]" type="text" placeholder="包名" onblur="check_package(this)" onchange="change(this,0)">';
+                        $html1+='        <input id="admin_btj_1" name="pro_attr['+j+'][0][pack][link]" type="text" placeholder="推广链接" class="" onchange="change(this,0)">';
+                        $html1+='        <input name="pro_attr['+j+'][0][pack_'+first[j]['t']+'][file]" type="file">';
+                        $html1+='        </div>';
+                        $html1+='       </div>';
+
+                    }
+                    $('.admin_tgxz').empty().html($html1);
+                }
+            });
+        });
+
+    });
+    function create_package(t,id,obj) {
+        $html="";
+        $this = $(obj);
+        $index = id;
+        $tindex = $this.attr('data-index');
+        $html ='<div class="admin_tg_btj">';
+        $html +='<input name="pro_attr['+$index+']['+$tindex+'][pack][pack]" type="text" placeholder="包名"  onblur="check_package(this)" onchange="change(this,0)">';
+        $html +='<input id="admin_btj_1" name="pro_attr['+$index+']['+$tindex+'][pack][link]" type="text" placeholder="推广链接" class="" onchange="change(this,0)">';
+        $html += '<input name="pro_attr['+$index+']['+$tindex+'][pack_'+t+'][file]" type="file">';
+        $html += '<span style="cursor: pointer;" onclick="javascript:closed('+$index+',this);">×</span>';
+        $html +='</div>';
+        $this.siblings('.admin_tg_btj').last().after($html);
+        $this.attr('data-index',++$tindex);
+    }
+    function check_package(obj) {
+        $this=$(obj);
+        if($this.val()!=''){
+            $.post('__URL__/check_packname',{pid:$('#plist').val(),title:$this.val(),cid:$('#change-type').val(),mid:'{$Think.get.mid}'},function (data) {
+                if(data.status==0){
+                    alert(data.msg);
+                    $this.css('border','1px solid red');
+                    $flag = false;
+                }else {
+                    $this.removeAttr('style');
+                    $flag = true;
+                }
+            });
+        }
+    }
+    function change(obj,id) {
+        var reg = /^\d+(\.\d+)?$/;
+        $this = $(obj);
+        if($this.val()!=''){
+            $this.removeAttr('style');
+            $flag = true;
+        }else {
+            $flag = false;
+        }
+        if(id==1){
+            if(!reg.test($this.val())){
+                $flag = false;
+                alert('请填写数字');
+                $this.css('border','1px solid red');
+            }else{
+                $flag = true;
+            }
+        }
+    }
+    function closed(id,obj) {
+        $(obj).parent('div.admin_tg_btj').remove();
+    }
+</script>
+<include file="Common:footer"/>

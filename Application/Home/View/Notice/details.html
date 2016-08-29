@@ -1,0 +1,70 @@
+<include file="Common:header1"/>
+<div class="notice_details_main">
+    <div class="search">
+        <strong>NOTICE 通知</strong>
+		<span class="check2">
+             <a href="{:U('/notice/index')}" data-role=""  <if condition="Think.get.cid eq '' and cid eq ''">id="check2"</if> >全部</a>
+             <a href="{:U('/notice/index?cid=4')}" data-role="" <eq name="Think.get.cid" value="4">id="check2"</eq> <eq name="cid" value="4">id="check2"</eq>>公告</a>
+             <a href="{:U('/notice/index?cid=5')}" data-role="" <eq name="Think.get.cid" value="5">id="check2"</eq> <eq name="cid" value="5">id="check2"</eq>>常见问题</a>
+             <a href="{:U('/notice/index?cid=6')}" data-role=""  <eq name="Think.get.cid" value="6">id="check2"</eq> <eq name="cid" value="6">id="check2"</eq>>结算通知</a>
+        </span>
+        <div>
+            <input type="text" placeholder="输入产品名称" class="search_input">
+            <input type="submit" value="" class="search_logo">
+        </div>
+    </div>
+
+    <div class="notice_details_main_problem">
+				<span>
+					<strong>
+                        <h2>{$vo.title}</h2>
+                        <em>发布时间：</em>
+                        <b>{$vo.create_time|date='Y-m-d',###}</b>
+                        <em>发布人：</em>
+                        <b>官方</b>
+                    </strong>
+					<div class="share">
+                        <b>分享</b>
+                    </div>
+					<a href="{:U('/notice')}">[返回]</a>
+				</span>
+        <div class="notice_content">
+            {$vo.content|htmlspecialchars_decode}
+        </div>
+        <div class="notice_btns">
+            <span class="notice_btns_up">
+                <b>上一篇：</b>
+                <empty name="next">没有了<else /><a href="{:U('/notices/'.$next['id'])}" title="{$pre.title}">{$next.title}</a></empty>
+            </span>
+            <span class="notice_btns_down">
+                <b>下一篇：</b>
+               <empty name="pre">没有了<else /><a href="{:U('/notices/'.$pre['id'])}" title="{$pre.title}">{$pre.title}</a></empty>
+            </span>
+        </div>
+    </div>
+    <!-- 广告条advertisement -->
+    <div class="main_adv">
+        <ul class="main_adv_ul1">
+            <list model="Advert" limit="5">
+                <volist name="list" id="vo">
+                    <li><a href="{$vo.url}"><img src="{$vo.image}" alt=""></a></li>
+                </volist>
+            </list>
+        </ul>
+        <ul class="main_adv_ul2">
+        </ul>
+    </div>
+    <!-- 合作伙伴 -->
+    <div class="main_partners">
+				<span class="pro_title">
+					<b></b>
+					<strong>
+                        <em>Our partners</em>
+                        <a><img src="__IMAGES__/friend.fw.png" alt=""></a>
+                    </strong>
+				</span>
+        <div class="main_partners_list" id="main_partners_list">
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

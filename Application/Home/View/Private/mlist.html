@@ -1,0 +1,135 @@
+<include file="Common:header1"/>
+<div class="notice_details_main">
+    <div class="search">
+        <strong>NOTICE 个人中心</strong>
+				<span class="check2">
+					<a href="{:U('/private')}">基本信息</a>
+					<a href="{:U('/my_product')}" id="check2">开通的产品</a>
+				</span>
+				<span>
+					<b>用户名：<i id="user_name"></i></b>
+					<!--<a href="javascript:;" onclick="changePassword()">修改密码</a>-->
+				</span>
+                <span>
+                    <b>我的积分：<em id="jifen">{$Think.session.jifen} </em>分</b>
+                    <!--<a href="#">兑换礼品</a>-->
+                </span>
+        <div>
+            <b>用户类型：</b>
+            <em id="user_type"></em>
+        </div>
+    </div>
+
+    <div class="private_product_list">
+        <div class="infor_reivse" id="changePad" style="display:none;">
+					<span>
+						<input type="password" id="initPassword" placeholder="原始登录密码" onblur="initPassNull(this)">
+						<input type="password" id="newPassword1" placeholder="新密码" onblur="initPassNull(this)">
+						<input type="password" id="newPassword2" placeholder="再次输入密码" onblur="initPassNull(this)">
+					</span>
+            <input class="reivse_submit" type="submit" value="确认修改" onclick="initPassword()">
+            <input class="reivse_reset" type="reset" value="取消" onclick="resetmove()">
+        </div>
+        <div class="private_product_list_nav">
+					<span class="border_none">
+						<a href="{:U('/my_product/0')}" <empty name="Think.get.t">id="product_navbg"</empty>>全部</a>
+						<a href="{:U('/my_product/1')}" <eq name="Think.get.t" value="1">id="product_navbg"</eq> >PC端</a>
+						<a href="{:U('/my_product/2')}" <eq name="Think.get.t" value="2">id="product_navbg"</eq>>移动端</a>
+					</span>
+					<span class="filter">
+						<a href="{:U('/my_product/0')}"  <empty name="Think.get.tt">id="product_navbg"</empty>>全部</a>
+						<a href="javascript:void(0);" <eq name="Think.get.tt" value="CPA">id="product_navbg"</eq> data-role="CPA">CPA</a>
+						<a href="javascript:void(0);" <eq name="Think.get.tt" value="CPS">id="product_navbg"</eq> data-role="CPS">CPS</a>
+						<a href="javascript:void(0);" <eq name="Think.get.tt" value="CPC">id="product_navbg"</eq> data-role="CPC">CPC</a>
+						<a href="javascript:void(0);" <eq name="Think.get.tt" value="CPM">id="product_navbg"</eq> data-role="CPM">CPM</a>
+						<a href="javascript:void(0);" <eq name="Think.get.tt" value="meiti">id="product_navbg"</eq> data-role="meiti">富媒体</a>
+					</span>
+        </div>
+        <div class="product_list_infor">
+
+            <notempty name="list">
+                <ul>
+                    <li class="width5 align_c" id="height_none">产品名称</li>
+                    <li class="width6" id="height_none">信息</li>
+                    <li class="width6" id="height_none">开通价格</li>
+                    <li class="width3" id="height_none">状态</li>
+                    <li class="width7 align_c" id="height_none">操作</li>
+                </ul>
+
+                <volist name="list" id="vo">
+
+                    <ul>
+                        <li class="width5 align_c">
+							<span>
+								<img src="{$vo[0].pid|get_image}" alt="">
+							</span>
+                        </li>
+                        <li class="width6">
+							<span>
+
+								<strong>产品名称：<b>{$vo[0]['pid']|get_pro}</b></strong>
+								<strong>产品类型：<em><eq name="vo[0].cid" value="1">PC端 <else />移动端</eq></em></strong>
+								<strong>结算方式：<b><volist name="vo" id="vo1">
+                                        <gt name="key" value="0">/</gt>{$vo1.date|get_fangshi}
+                                    </volist>
+                                </b></strong>
+								<strong>推广方式：<b><volist name="vo" id="vo1">
+                                            <gt name="key" value="0">/</gt><eq name="vo1.type" value="meiti">富媒体<else />{$vo1.type}</eq>
+                                        </volist>
+                                    </b>
+                                </strong>
+								<strong>结算方式：<b><volist name="vo" id="vo1">
+                                        <gt name="key" value="0">/</gt>{$vo1.date|get_fangshi}
+                                    </volist>
+                                </b></strong>
+							</span>
+                        </li>
+                        <li class="width6">
+							<span>
+                                 <volist name="vo" id="vo1">
+                                     <p><eq name="vo1.type" value="meiti">富媒体 <else />{$vo1.type}</eq>/<b>{$vo1.price}</b>元</p>
+                                 </volist>
+							</span>
+                        </li>
+                        <li class="width3">
+							<span>
+								<em>已开通</em>
+							</span>
+                        </li>
+                        <li class="width7 align_c">
+							<span>
+								<a href="{:U('/details/'.$vo[0]['id'])}">查看详细</a>
+								<i>更新至{$vo1.last|date='Y-m-d',###}</i>
+							</span>
+                        </li>
+                    </ul>
+                </volist>
+                <else />
+                <div class="product_list_infor_none">
+                    您还没申请任何产品
+                </div>
+            </notempty>
+            <div class="web_dxqc"></div>
+        </div>
+    </div>
+    <!-- 广告条advertisement -->
+    <div class="main_adv">
+        <a href="#">
+            <img src="__IMAGES__/gg.fw.png" alt="">
+        </a>
+    </div>
+    <!-- 合作伙伴 -->
+    <div class="main_partners">
+        <span class="pro_title">
+            <b></b>
+            <strong>
+                <em>Our partners</em>
+                <a><img src="__IMAGES__/friend.fw.png" alt=""></a>
+            </strong>
+        </span>
+        <div class="main_partners_list" >
+
+        </div>
+    </div>
+</div>
+<include file="Common:footer" />

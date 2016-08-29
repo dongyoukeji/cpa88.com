@@ -1,0 +1,23 @@
+<div class="admin_l">
+    <a></a>
+    <span>
+        <i>1024</i>
+        <strong>506</strong>
+        <i>30</i>
+    </span>
+    <div>
+        <i>BASIC DATA</i>
+        <volist name="nav" id="vo">
+            <neq name="vo.contr_name" value="Admin">
+                <a href="__APP__{$vo.url}" <eq name="CONTROLLER_NAME" value="$vo.contr_name">id="admin_dhxz"</eq>>{$vo.name}</a>
+            </neq>
+        </volist>
+        <i>EXECUTION DATA</i>
+        <volist name="nav" id="vo">
+            <eq name="vo.contr_name" value="Admin">
+                <a href="__APP__{$vo.url}" <eq name="CONTROLLER_NAME" value="$vo.contr_name">id="admin_dhxz"</eq>>{$vo.name}</a>
+            </eq>
+        </volist>
+        <!--<eq name="gid" value="-1"><a href="__MODULE__/Admin" <eq name="CONTROLLER_NAME" value="Admin">id="admin_dhxz"</eq>>账号管理</a></eq>-->
+    </div>
+</div>

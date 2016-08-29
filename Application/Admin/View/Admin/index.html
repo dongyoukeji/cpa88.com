@@ -1,0 +1,53 @@
+<include file="Common:header"/>
+<div class="admin_r_all" style="height: 477px;">
+    <div class="admin_bg_all">
+        <div class="admin_bg_t">
+            <a href="#" id="admin_bg_t_x">管理员列表</a>
+            <eq name="user.gid" value="-1"><a href="__URL__/add" id="">添加管理员</a></eq>
+        </div>
+        <div class="admin_bg_b">
+            <ul class="admin_bg_b_t">
+                <li class="admin_bg4">管理员账号</li>
+                <li class="admin_bg4">管理员密码</li>
+                <li class="admin_bg1">管理员权限</li>
+                <li class="admin_bg3">管理员状态</li>
+                <li class="admin_bg1">最后登录时间</li>
+                <li class="admin_bg1">最后登录IP</li>
+                <li class="admin_bg6">操作</li>
+            </ul>
+            <notempty name="list">
+                <volist name="list" id="vo">
+                    <ul>
+                        <li class="admin_bg4">{$vo.username}</li>
+                        <li class="admin_bg4">
+                            {$vo.hash|base64_decode}
+                        </li>
+                        <li class="admin_bg1">
+                            <eq name="vo.gid" value="-1"><span class="red" style="border:none;">超级管理员</span><else /><span  style="border:none;" title="{$vo.gid|get_group}">{$vo.gid|get_group}</span></eq>
+                        </li>
+                        <li class="admin_bg3">
+                            <eq name="vo.status" value="1"><span class="red" style="border:none;">已锁定</span><else /><span class="green" style="border:none;">正常</span></eq>
+                        </li>
+                        <li class="admin_bg1">{$vo.last_date|date='Y-m-d',###}</li>
+                        <li class="admin_bg1"><notempty name="vo.last_ip">{$vo.last_ip}<else />未登录</notempty></li>
+                        <li class="admin_bg6">
+                            <neq name="vo.gid" value="-1">
+                                <a href="__URL__/check?id={$vo.id}">修改密码</a>
+                                <eq name="group" value="1"><a href="__URL__/check_group?id={$vo.id}">权限管理</a></eq>
+                                <a href="__URL__/del?id={$vo.id}" class="confirm" data-role="您确定要删除吗？删除后数据将不能恢复！">删除</a>
+                                <else />
+                                <a href="__URL__/check?id={$vo.id}">修改密码</a>
+                            </neq>
+                        </li>
+                    </ul>
+                </volist>
+                <div class="admin_null">{$page}</div>
+                <else />
+                <div class="admin_null">暂无数据</div>
+            </notempty>
+
+
+        </div>
+    </div>
+</div>
+<include file="Common:footer"/>

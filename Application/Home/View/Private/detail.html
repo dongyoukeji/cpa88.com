@@ -1,0 +1,179 @@
+<include file="Common:header1"/>
+<div class="notice_details_main">
+    <div class="search">
+        <strong>NOTICE 个人中心</strong>
+				<span class="check2">
+					<a href="{:U('/private')}">基本信息</a>
+					<a href="{:U('/my_product')}" id="check2">开通的产品</a>
+				</span>
+				<span>
+					<b>用户名：<i id="user_name"></i></b>
+					<!--<a href="javascript:;" onclick="changePassword()">修改密码</a>-->
+				</span>
+        <div>
+            <b>用户类型：</b>
+            <em id="user_type"></em>
+        </div>
+    </div>
+    <div class="pro_list_main_details">
+        <div class="infor_reivse" id="changePad" style="display:none;">
+					<span>
+						<input type="password" placeholder="原始登录密码">
+						<input type="password" placeholder="新密码">
+						<input type="password" placeholder="再次输入密码">
+					</span>
+            <input class="reivse_submit" type="submit" value="确认修改">
+            <input class="reivse_reset" type="reset" value="取消" onclick="resetmove()">
+        </div>
+        <a class="product">
+            <b>
+                <eq name="pro.cid" value="1"> PC端 <else />移动端</eq>
+                <span class="triangle"></span>
+            </b>
+            <strong>
+                <img src="{$pro.pid|get_image}" alt="{$pro.title}">
+            </strong>
+            <p>推广中</p>
+        </a>
+        <span class="pro_intro">
+            <strong>
+                <em>名称：</em>
+                <b>{$pro.pid|get_pro}</b>
+            </strong>
+            <strong>
+                <em>类型：</em>
+                <b> <eq name="pro.cid" value="1"> PC端 <else />移动端</eq></b>
+            </strong>
+            <strong>
+                <em>推广：</em>
+                <b>
+                    <volist name="ty" id="vo1">
+                        <gt name="key" value="0">/</gt><eq name="vo1.type" value="meiti">富媒体<else />{$vo1.type}</eq>
+                    </volist>
+                </b>
+            </strong>
+            <strong>
+                <em>方式：</em>
+                <b>
+                    <volist name="ty" id="vo1">
+                        <gt name="key" value="0">/</gt>{$vo1.date|get_fangshi}
+                    </volist>
+                </b>
+            </strong>
+            <strong>
+                <em>价格：</em>
+                <i>
+                    <volist name="ty" id="vo1">
+                        <gt name="key" value="0">/</gt>{$vo1.price}</eq>
+                    </volist>
+                </i>
+            </strong>
+        </span>
+    </div>
+    <div class="notice_details_main_list">
+        <strong>
+            <volist name="ty" id="vo1">
+                <a href="{:U('details/'.$vo1['id'])}" <eq name="vo1.type" value="$pro.type">id="product_navbg"</eq> ><eq name="vo1.type" value="meiti">富媒体<else />{$vo1.type}</eq></a>
+            </volist>
+        </strong>
+				<span>
+                    <volist name="pro['pack_list']" id="pl">
+                            <a href="{:U('/details/'.$pl['id'])}" <eq name="pl.id" value="$pro.id">id="product_navbg"</eq>>{$pl.title}</a>
+                    </volist>
+				</span>
+        <div class="notice_details_main_list_excl">
+            <strong>
+                    <span>
+                        <em>结算周期：<i>{$pro.date|get_fangshi}</i></em>
+                        <eq name="pro.download" value="1"><a href="__URL__/down_res?id={$pro.id}" data-role="{$pro.id}" class="download-app">安装包下载</a><else /><b>推广链接：<a>{$pro.resource}</a></b></eq>
+                    </span>
+                    <a href="__URL__/export_excel?mid={$Think.session.mid}&pid={$pro.id}" id="download_exl">下载EXCL表单</a>
+            </strong>
+					<span>
+						<ul id="title_bg">
+                            <li class="width4">时间</li>
+                            <li class="width3">价格/元</li>
+                            <li class="width3">数据</li>
+                            <li class="width3">核减/数据</li>
+                            <li class="width3">收益金额/元</li>
+                            <li class="width3">扣税0.06%</li>
+                            <li class="width3">结算金额/元</li>
+                            <li class="width3">官方截图</li>
+                            <li class="width4" id="border_none">结算状态</li>
+                        </ul>
+                        <empty name="list">
+                            <div class="product_list_infor_none">暂无数据</div>
+                            <else />
+                            <volist name="list" id="vo">
+                                <neq name="vo.checked" value="-">
+                                    <ul>
+                                        <li class="width4">
+                                            <i class="red_sj position_ab"></i>
+                                            {$vo.time|date='Y-m-d',###}
+                                        </li>
+                                        <li class="width3">{$vo.price}</li>
+                                        <li class="width3">{$vo.real}</li>
+                                        <li class="width3"><eq name="vo.checked" value="-">-<else />{$vo.checked}</eq></li>
+                                        <li class="width3">{$vo.total1}</li>
+                                        <li class="width3"><if condition="$_SESSION['mtype'] eq 0">{$vo.choushui}<else />-</if></li>
+                                        <li class="width3">{$vo.total}</li>
+                                        <li class="width3"><notempty name="vo.image"><a href="__URL__/dimage?id={$vo.id}">下載</a> <else />未上传</notempty></li>
+                                        <li class="width4" id="border_none">
+                                            <eq name="vo.total" value="0">
+                                                -
+                                                <else />
+                                                <eq name="vo.status" value="1"><b>已結算</b>
+                                                    <a href="__URL__/down_kuan?id={$vo.id}">截图</a>
+                                                    <else /><em>未结算</em>
+                                                </eq>
+                                            </eq>
+                                        </li>
+                                    </ul>
+                                    <else />
+                                    <ul>
+                                        <li class="width4">{$vo.time|date='Y-m-d',###}</li>
+                                        <li class="width3">{$vo.price}</li>
+                                        <li class="width3">{$vo.real}</li>
+                                        <li class="width3">-</li>
+                                        <li class="width3">-</li>
+                                        <li class="width3">-</li>
+                                        <li class="width3">-</li>
+                                        <li class="width3"><notempty name="vo.image"><a href="__URL__/dimage?id={$vo.id}">下載</a> <else />未上传</notempty></li>
+                                        <li class="width4" id="border_none">-</li>
+                                    </ul>
+                                </neq>
+                            </volist>
+                        </empty>
+
+					</span>
+                    <!--<notempty name="list">-->
+                        <!--<strong class="product_list_infor_none">暂无数据</strong>-->
+                    <!--</notempty>-->
+            <div>
+                <i>
+                    <b class="red_sj position_ab"></b>
+                    红色角标为结算日
+                </i>
+                <span class="">
+                    {$page}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#download_exl').click(function (e) {
+            e.preventDefault();
+            $.post('__URL__/export_excel',{mid:'{$Think.session.mid}',pid:'{$pro.id}'},function (data) {
+                if(data.status==1){
+                    //window.open(data.redirect);
+                    window.location.href=data.redirect;
+                }else {
+                    alert(data.msg);
+                }
+            });
+        });
+    });
+</script>
+<include file="Common:footer" />
